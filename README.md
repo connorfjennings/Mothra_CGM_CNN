@@ -1,1 +1,1 @@
-need yt and illustious_python to generate the data, pytorch to run the models
+need yt and illustiouspython to generate the data, pytorch to run the models.
