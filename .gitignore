@@ -8,3 +8,6 @@ yt_maps/copied_from_mo/
 yt_maps/jobs/
 yt_maps/TNG50_2D_maps/
 CNN/checkpoints_test/
+for_student/
+Pytorch-UNet/
+yt_quickstart/
