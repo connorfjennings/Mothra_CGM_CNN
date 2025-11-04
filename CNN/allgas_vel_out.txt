@@ -1,0 +1,430 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) StdEnv
+Loaded 177 galaxies into RAM.
+Train galaxies: 141 | Test galaxies: 36
+Input mean: [-24.489016 -22.973673 -24.477615] std: [0.9970848 1.215704  1.0131189]
+[001/200] train: loss 3655.29642, mae 41.68102 | val: loss 2864.52147, mae 40.67922
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_best.pt
+finished epoch 1
+[002/200] train: loss 3651.05760, mae 41.64486 | val: loss 2869.13663, mae 40.72043
+finished epoch 2
+[003/200] train: loss 3648.09294, mae 41.64732 | val: loss 2867.39632, mae 40.69686
+finished epoch 3
+[004/200] train: loss 3641.85707, mae 41.63018 | val: loss 2874.85503, mae 40.74684
+finished epoch 4
+[005/200] train: loss 3635.63911, mae 41.61226 | val: loss 2879.73310, mae 40.77730
+finished epoch 5
+[006/200] train: loss 3625.97428, mae 41.57955 | val: loss 2876.86275, mae 40.76104
+finished epoch 6
+[007/200] train: loss 3613.20888, mae 41.55114 | val: loss 2891.86442, mae 40.87085
+finished epoch 7
+[008/200] train: loss 3600.45602, mae 41.51246 | val: loss 2889.60817, mae 40.83891
+finished epoch 8
+[009/200] train: loss 3582.03625, mae 41.47135 | val: loss 2898.72190, mae 40.89480
+finished epoch 9
+[010/200] train: loss 3556.30642, mae 41.41950 | val: loss 2912.61838, mae 40.96100
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch010.pt
+finished epoch 10
+[011/200] train: loss 3653.71611, mae 41.67304 | val: loss 2864.76056, mae 40.68210
+finished epoch 11
+[012/200] train: loss 3651.91724, mae 41.65183 | val: loss 2868.08807, mae 40.70755
+finished epoch 12
+[013/200] train: loss 3652.64172, mae 41.66456 | val: loss 2878.02473, mae 40.78517
+finished epoch 13
+[014/200] train: loss 3651.21517, mae 41.66157 | val: loss 2864.33531, mae 40.67660
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_best.pt
+finished epoch 14
+[015/200] train: loss nan, mae nan | val: loss 2868.18968, mae 40.70046
+finished epoch 15
+[016/200] train: loss nan, mae nan | val: loss 2869.97653, mae 40.70702
+finished epoch 16
+[017/200] train: loss 3646.69961, mae 41.63710 | val: loss 2887.44786, mae 40.78556
+finished epoch 17
+[018/200] train: loss 3645.95975, mae 41.64431 | val: loss 2884.62852, mae 40.78432
+finished epoch 18
+[019/200] train: loss 3640.51787, mae 41.62969 | val: loss 2871.16146, mae 40.71053
+finished epoch 19
+[020/200] train: loss 3639.11735, mae 41.63937 | val: loss 2881.39621, mae 40.77711
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch020.pt
+finished epoch 20
+[021/200] train: loss nan, mae nan | val: loss 2889.40953, mae 40.82113
+finished epoch 21
+[022/200] train: loss 3623.66517, mae 41.59337 | val: loss 2882.85682, mae 40.77625
+finished epoch 22
+[023/200] train: loss 3604.52915, mae 41.55663 | val: loss 2916.07016, mae 40.98120
+finished epoch 23
+[024/200] train: loss 3577.79309, mae 41.48730 | val: loss 2967.22407, mae 41.29044
+finished epoch 24
+[025/200] train: loss 3556.71574, mae 41.44727 | val: loss 2953.45118, mae 41.16127
+finished epoch 25
+[026/200] train: loss 3499.09169, mae 41.28476 | val: loss 2906.32870, mae 40.93208
+finished epoch 26
+[027/200] train: loss 3445.42812, mae 41.13737 | val: loss 3011.70476, mae 41.52154
+finished epoch 27
+[028/200] train: loss 3346.45473, mae 40.83169 | val: loss 3025.36230, mae 41.67136
+finished epoch 28
+[029/200] train: loss 3260.83315, mae 40.56469 | val: loss 3126.91145, mae 42.23711
+finished epoch 29
+[030/200] train: loss 3155.41092, mae 40.11540 | val: loss 3210.79427, mae 42.72354
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch030.pt
+finished epoch 30
+[031/200] train: loss 3047.15371, mae 39.66047 | val: loss 3059.65308, mae 41.91012
+finished epoch 31
+[032/200] train: loss 2913.38151, mae 39.09057 | val: loss 3168.73053, mae 42.58857
+finished epoch 32
+[033/200] train: loss 2797.13535, mae 38.54984 | val: loss 3096.61287, mae 42.25146
+finished epoch 33
+[034/200] train: loss 2714.12344, mae 38.12225 | val: loss 3488.86960, mae 44.49256
+finished epoch 34
+[035/200] train: loss 2589.12265, mae 37.44822 | val: loss 3105.83380, mae 42.22571
+finished epoch 35
+[036/200] train: loss 2479.52926, mae 36.82282 | val: loss 3154.95648, mae 42.57649
+finished epoch 36
+[037/200] train: loss 2397.27929, mae 36.31169 | val: loss 3163.84500, mae 42.57139
+finished epoch 37
+[038/200] train: loss 2337.96246, mae 35.96085 | val: loss 3271.06535, mae 42.98049
+finished epoch 38
+[039/200] train: loss 2249.14851, mae 35.34545 | val: loss 3246.38409, mae 43.04047
+finished epoch 39
+[040/200] train: loss 2149.77535, mae 34.65280 | val: loss 3416.70480, mae 43.91041
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch040.pt
+finished epoch 40
+[041/200] train: loss 2058.59966, mae 34.03865 | val: loss 3374.38349, mae 43.80236
+finished epoch 41
+[042/200] train: loss 1935.11912, mae 33.07702 | val: loss 3289.27403, mae 43.39386
+finished epoch 42
+[043/200] train: loss 1815.82206, mae 32.03475 | val: loss 3361.33559, mae 43.98582
+finished epoch 43
+[044/200] train: loss 1669.66810, mae 30.78276 | val: loss 3381.01534, mae 44.13330
+finished epoch 44
+[045/200] train: loss 1521.09350, mae 29.34184 | val: loss 3360.40853, mae 43.84701
+finished epoch 45
+[046/200] train: loss 1382.73075, mae 27.97436 | val: loss 3478.78715, mae 44.51472
+finished epoch 46
+[047/200] train: loss 1273.44619, mae 26.74654 | val: loss 3693.78070, mae 45.57081
+finished epoch 47
+[048/200] train: loss 1149.21147, mae 25.42546 | val: loss 3573.36863, mae 45.13246
+finished epoch 48
+[049/200] train: loss 1056.80411, mae 24.35415 | val: loss 3585.52875, mae 45.31031
+finished epoch 49
+[050/200] train: loss 997.47494, mae 23.51855 | val: loss 3510.07494, mae 44.81130
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch050.pt
+finished epoch 50
+[051/200] train: loss 902.95693, mae 22.37086 | val: loss 3524.62446, mae 44.64003
+finished epoch 51
+[052/200] train: loss 857.07647, mae 21.75301 | val: loss 3568.85789, mae 44.94898
+finished epoch 52
+[053/200] train: loss 826.95937, mae 21.27830 | val: loss 3679.24432, mae 45.85826
+finished epoch 53
+[054/200] train: loss 760.13092, mae 20.43328 | val: loss 3610.96186, mae 45.13638
+finished epoch 54
+[055/200] train: loss 735.23561, mae 20.01970 | val: loss 3466.73646, mae 44.42794
+finished epoch 55
+[056/200] train: loss 724.49171, mae 19.77983 | val: loss 3475.96361, mae 44.54174
+finished epoch 56
+[057/200] train: loss 678.67025, mae 19.14157 | val: loss 3562.17990, mae 45.05155
+finished epoch 57
+[058/200] train: loss 642.80139, mae 18.63958 | val: loss 3404.17725, mae 44.08093
+finished epoch 58
+[059/200] train: loss 617.20761, mae 18.22095 | val: loss 3492.42119, mae 44.61608
+finished epoch 59
+[060/200] train: loss 595.56904, mae 17.86185 | val: loss 3407.04641, mae 43.98653
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch060.pt
+finished epoch 60
+[061/200] train: loss 587.56624, mae 17.71793 | val: loss 3457.40927, mae 44.34709
+finished epoch 61
+[062/200] train: loss 562.89579, mae 17.32134 | val: loss 3421.49341, mae 44.21565
+finished epoch 62
+[063/200] train: loss 532.83121, mae 16.85151 | val: loss 3462.69231, mae 44.27992
+finished epoch 63
+[064/200] train: loss 522.58468, mae 16.64500 | val: loss 3483.52448, mae 44.36552
+finished epoch 64
+[065/200] train: loss 507.52983, mae 16.34536 | val: loss 3449.63236, mae 44.25799
+finished epoch 65
+[066/200] train: loss 494.38938, mae 16.14111 | val: loss 3380.39864, mae 43.92665
+finished epoch 66
+[067/200] train: loss 478.56861, mae 15.87630 | val: loss 3383.67027, mae 43.90649
+finished epoch 67
+[068/200] train: loss 474.38649, mae 15.80445 | val: loss 3412.94059, mae 44.01060
+finished epoch 68
+[069/200] train: loss 467.72008, mae 15.62606 | val: loss 3406.92161, mae 43.98922
+finished epoch 69
+[070/200] train: loss 446.86982, mae 15.29862 | val: loss 3388.49551, mae 43.77124
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch070.pt
+finished epoch 70
+[071/200] train: loss 442.51267, mae 15.20237 | val: loss 3536.74754, mae 44.76124
+finished epoch 71
+[072/200] train: loss 436.53251, mae 15.05975 | val: loss 3458.84249, mae 44.42743
+finished epoch 72
+[073/200] train: loss 420.17536, mae 14.77484 | val: loss 3327.62081, mae 43.54914
+finished epoch 73
+[074/200] train: loss 416.73365, mae 14.69413 | val: loss 3414.48814, mae 43.92770
+finished epoch 74
+[075/200] train: loss 409.97342, mae 14.54257 | val: loss 3437.51096, mae 44.17711
+finished epoch 75
+[076/200] train: loss 392.78313, mae 14.31159 | val: loss 3318.36630, mae 43.62864
+finished epoch 76
+[077/200] train: loss 398.35234, mae 14.34451 | val: loss 3443.91143, mae 44.14362
+finished epoch 77
+[078/200] train: loss 389.27570, mae 14.19449 | val: loss 3290.83796, mae 43.36714
+finished epoch 78
+[079/200] train: loss 383.69291, mae 14.06358 | val: loss 3328.57998, mae 43.53347
+finished epoch 79
+[080/200] train: loss 378.26183, mae 13.94300 | val: loss 3308.52749, mae 43.36697
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch080.pt
+finished epoch 80
+[081/200] train: loss 367.23850, mae 13.77936 | val: loss 3291.84216, mae 43.31840
+finished epoch 81
+[082/200] train: loss 376.64923, mae 13.88335 | val: loss 3301.22580, mae 43.43126
+finished epoch 82
+[083/200] train: loss 362.25102, mae 13.64020 | val: loss 3313.01472, mae 43.41623
+finished epoch 83
+[084/200] train: loss 352.95498, mae 13.46968 | val: loss 3284.59049, mae 43.44395
+finished epoch 84
+[085/200] train: loss 357.94577, mae 13.55415 | val: loss 3324.91180, mae 43.57778
+finished epoch 85
+[086/200] train: loss 346.67362, mae 13.36111 | val: loss 3332.23454, mae 43.55582
+finished epoch 86
+[087/200] train: loss 350.32164, mae 13.37494 | val: loss 3298.09059, mae 43.43656
+finished epoch 87
+[088/200] train: loss 343.29371, mae 13.23605 | val: loss 3311.58587, mae 43.47396
+finished epoch 88
+[089/200] train: loss 340.58650, mae 13.15894 | val: loss 3384.80890, mae 43.87720
+finished epoch 89
+[090/200] train: loss 337.80860, mae 13.13531 | val: loss 3296.90810, mae 43.43200
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch090.pt
+finished epoch 90
+[091/200] train: loss 331.80419, mae 12.99693 | val: loss 3330.59114, mae 43.53605
+finished epoch 91
+[092/200] train: loss 325.48403, mae 12.90386 | val: loss 3281.37555, mae 43.27935
+finished epoch 92
+[093/200] train: loss 333.57021, mae 12.99437 | val: loss 3317.77382, mae 43.55300
+finished epoch 93
+[094/200] train: loss 330.86972, mae 12.94016 | val: loss 3355.22073, mae 43.76437
+finished epoch 94
+[095/200] train: loss 319.52960, mae 12.75321 | val: loss 3362.45932, mae 43.69641
+finished epoch 95
+[096/200] train: loss 321.02212, mae 12.72491 | val: loss 3377.36544, mae 43.80940
+finished epoch 96
+[097/200] train: loss 314.64471, mae 12.64186 | val: loss 3252.60701, mae 43.01150
+finished epoch 97
+[098/200] train: loss 318.03174, mae 12.67377 | val: loss 3272.13832, mae 43.22896
+finished epoch 98
+[099/200] train: loss 313.39114, mae 12.58914 | val: loss 3268.03154, mae 43.19304
+finished epoch 99
+[100/200] train: loss 312.11326, mae 12.53762 | val: loss 3326.56347, mae 43.60773
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch100.pt
+finished epoch 100
+[101/200] train: loss 302.05668, mae 12.37360 | val: loss 3274.68720, mae 43.33084
+finished epoch 101
+[102/200] train: loss 303.22027, mae 12.36426 | val: loss 3310.78003, mae 43.45433
+finished epoch 102
+[103/200] train: loss 301.83121, mae 12.34241 | val: loss 3389.66606, mae 43.86408
+finished epoch 103
+[104/200] train: loss 299.73639, mae 12.30835 | val: loss 3323.28204, mae 43.53009
+finished epoch 104
+[105/200] train: loss 295.57421, mae 12.21838 | val: loss 3297.42631, mae 43.30229
+finished epoch 105
+[106/200] train: loss 297.14203, mae 12.25051 | val: loss 3329.51670, mae 43.59373
+finished epoch 106
+[107/200] train: loss 290.36471, mae 12.11183 | val: loss 3266.61933, mae 43.26076
+finished epoch 107
+[108/200] train: loss 293.60460, mae 12.15561 | val: loss 3291.21542, mae 43.46579
+finished epoch 108
+[109/200] train: loss 294.82182, mae 12.13283 | val: loss 3309.66014, mae 43.32471
+finished epoch 109
+[110/200] train: loss 285.29923, mae 12.01731 | val: loss 3261.63669, mae 43.16311
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch110.pt
+finished epoch 110
+[111/200] train: loss 286.31601, mae 11.97272 | val: loss 3264.63220, mae 43.13789
+finished epoch 111
+[112/200] train: loss 284.98159, mae 11.94584 | val: loss 3289.46572, mae 43.30741
+finished epoch 112
+[113/200] train: loss 278.83504, mae 11.85820 | val: loss 3298.35265, mae 43.39451
+finished epoch 113
+[114/200] train: loss 282.25985, mae 11.90561 | val: loss 3304.03067, mae 43.48156
+finished epoch 114
+[115/200] train: loss 277.61185, mae 11.79829 | val: loss 3332.41943, mae 43.52174
+finished epoch 115
+[116/200] train: loss 276.22956, mae 11.76497 | val: loss 3306.83395, mae 43.40217
+finished epoch 116
+[117/200] train: loss 273.36252, mae 11.72043 | val: loss 3324.90147, mae 43.41823
+finished epoch 117
+[118/200] train: loss 276.01467, mae 11.75717 | val: loss 3270.60060, mae 43.15068
+finished epoch 118
+[119/200] train: loss 270.29861, mae 11.65431 | val: loss 3275.32854, mae 43.17450
+finished epoch 119
+[120/200] train: loss 268.89611, mae 11.61354 | val: loss 3286.87155, mae 43.29150
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch120.pt
+finished epoch 120
+[121/200] train: loss 268.32234, mae 11.58114 | val: loss 3252.08928, mae 43.11091
+finished epoch 121
+[122/200] train: loss 264.90449, mae 11.52913 | val: loss 3246.45944, mae 43.01501
+finished epoch 122
+[123/200] train: loss 261.69626, mae 11.47393 | val: loss 3276.35067, mae 43.22749
+finished epoch 123
+[124/200] train: loss 265.83123, mae 11.52574 | val: loss 3240.40379, mae 42.98176
+finished epoch 124
+[125/200] train: loss 265.25140, mae 11.47793 | val: loss 3241.96486, mae 42.93180
+finished epoch 125
+[126/200] train: loss 262.38682, mae 11.43730 | val: loss 3264.49572, mae 43.10108
+finished epoch 126
+[127/200] train: loss 259.21648, mae 11.36897 | val: loss 3274.32808, mae 43.17968
+finished epoch 127
+[128/200] train: loss 257.04530, mae 11.31735 | val: loss 3242.79162, mae 43.04094
+finished epoch 128
+[129/200] train: loss 256.14680, mae 11.31577 | val: loss 3243.81925, mae 43.03322
+finished epoch 129
+[130/200] train: loss 254.60215, mae 11.27930 | val: loss 3306.75554, mae 43.43218
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch130.pt
+finished epoch 130
+[131/200] train: loss 252.29351, mae 11.23869 | val: loss 3226.91010, mae 42.95219
+finished epoch 131
+[132/200] train: loss 251.52301, mae 11.21210 | val: loss 3242.66293, mae 42.99989
+finished epoch 132
+[133/200] train: loss 251.07313, mae 11.21259 | val: loss 3267.68934, mae 43.16553
+finished epoch 133
+[134/200] train: loss 251.75156, mae 11.20572 | val: loss 3272.42229, mae 43.07662
+finished epoch 134
+[135/200] train: loss 247.89468, mae 11.14254 | val: loss 3236.69297, mae 43.03048
+finished epoch 135
+[136/200] train: loss 245.80808, mae 11.09599 | val: loss 3260.92072, mae 43.09629
+finished epoch 136
+[137/200] train: loss 250.21997, mae 11.13927 | val: loss 3281.51734, mae 43.16787
+finished epoch 137
+[138/200] train: loss 246.08697, mae 11.05605 | val: loss 3310.88852, mae 43.37574
+finished epoch 138
+[139/200] train: loss 242.10230, mae 10.99747 | val: loss 3233.43362, mae 42.93707
+finished epoch 139
+[140/200] train: loss 240.53517, mae 10.98626 | val: loss 3235.62288, mae 42.96031
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch140.pt
+finished epoch 140
+[141/200] train: loss 243.09687, mae 10.98839 | val: loss 3264.40097, mae 43.09572
+finished epoch 141
+[142/200] train: loss 238.15084, mae 10.91816 | val: loss 3271.12738, mae 43.08242
+finished epoch 142
+[143/200] train: loss 238.22571, mae 10.89623 | val: loss 3241.28367, mae 43.01668
+finished epoch 143
+[144/200] train: loss 242.05426, mae 10.91718 | val: loss 3268.17740, mae 43.18745
+finished epoch 144
+[145/200] train: loss 236.42782, mae 10.86965 | val: loss 3222.27431, mae 42.88901
+finished epoch 145
+[146/200] train: loss 236.33855, mae 10.84789 | val: loss 3254.25365, mae 43.04175
+finished epoch 146
+[147/200] train: loss 231.22606, mae 10.74505 | val: loss 3246.53137, mae 43.04533
+finished epoch 147
+[148/200] train: loss 231.48922, mae 10.75515 | val: loss 3227.59197, mae 42.95939
+finished epoch 148
+[149/200] train: loss 231.54404, mae 10.76870 | val: loss 3234.13360, mae 42.89619
+finished epoch 149
+[150/200] train: loss 235.54357, mae 10.82370 | val: loss 3211.48752, mae 42.79154
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch150.pt
+finished epoch 150
+[151/200] train: loss 228.66367, mae 10.69280 | val: loss 3256.05332, mae 43.09477
+finished epoch 151
+[152/200] train: loss 228.71998, mae 10.65381 | val: loss 3224.92984, mae 42.83204
+finished epoch 152
+[153/200] train: loss 224.66114, mae 10.63405 | val: loss 3255.18042, mae 43.00681
+finished epoch 153
+[154/200] train: loss 226.48653, mae 10.63146 | val: loss 3222.76103, mae 42.86145
+finished epoch 154
+[155/200] train: loss 224.60153, mae 10.59340 | val: loss 3231.32657, mae 42.88663
+finished epoch 155
+[156/200] train: loss 223.15663, mae 10.56845 | val: loss 3279.68067, mae 43.18212
+finished epoch 156
+[157/200] train: loss 221.12156, mae 10.51366 | val: loss 3212.38422, mae 42.82946
+finished epoch 157
+[158/200] train: loss 218.89681, mae 10.47532 | val: loss 3197.79839, mae 42.71177
+finished epoch 158
+[159/200] train: loss 220.41267, mae 10.49867 | val: loss 3236.13833, mae 42.91694
+finished epoch 159
+[160/200] train: loss 217.16769, mae 10.45227 | val: loss 3231.68859, mae 42.83347
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch160.pt
+finished epoch 160
+[161/200] train: loss 219.25380, mae 10.45623 | val: loss 3199.15826, mae 42.76799
+finished epoch 161
+[162/200] train: loss 216.05076, mae 10.43211 | val: loss 3211.11789, mae 42.79786
+finished epoch 162
+[163/200] train: loss 217.07602, mae 10.40398 | val: loss 3214.73936, mae 42.79779
+finished epoch 163
+[164/200] train: loss 215.32788, mae 10.36085 | val: loss 3241.25458, mae 42.90986
+finished epoch 164
+[165/200] train: loss 214.29579, mae 10.34784 | val: loss 3189.83562, mae 42.72332
+finished epoch 165
+[166/200] train: loss 212.51544, mae 10.30804 | val: loss 3257.55547, mae 42.93452
+finished epoch 166
+[167/200] train: loss 210.71494, mae 10.29530 | val: loss 3223.77304, mae 42.81985
+finished epoch 167
+[168/200] train: loss 207.44605, mae 10.23894 | val: loss 3199.49261, mae 42.68875
+finished epoch 168
+[169/200] train: loss 207.28961, mae 10.21145 | val: loss 3259.50460, mae 42.95156
+finished epoch 169
+[170/200] train: loss 207.62223, mae 10.22380 | val: loss 3221.96504, mae 42.80002
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch170.pt
+finished epoch 170
+[171/200] train: loss 212.19221, mae 10.25743 | val: loss 3213.20599, mae 42.69518
+finished epoch 171
+[172/200] train: loss 208.82723, mae 10.20788 | val: loss 3234.57238, mae 42.90856
+finished epoch 172
+[173/200] train: loss 208.49220, mae 10.20696 | val: loss 3217.58143, mae 42.87309
+finished epoch 173
+[174/200] train: loss 204.07140, mae 10.10141 | val: loss 3202.38232, mae 42.69051
+finished epoch 174
+[175/200] train: loss 202.95802, mae 10.10127 | val: loss 3232.02828, mae 42.91139
+finished epoch 175
+[176/200] train: loss 204.47636, mae 10.11788 | val: loss 3201.48430, mae 42.67817
+finished epoch 176
+[177/200] train: loss 204.03044, mae 10.08957 | val: loss 3238.54293, mae 42.95351
+finished epoch 177
+[178/200] train: loss 201.19626, mae 10.05700 | val: loss 3235.80710, mae 42.92751
+finished epoch 178
+[179/200] train: loss 201.11829, mae 10.04331 | val: loss 3260.47797, mae 43.01503
+finished epoch 179
+[180/200] train: loss 201.38396, mae 10.03376 | val: loss 3231.48489, mae 42.89834
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch180.pt
+finished epoch 180
+[181/200] train: loss 200.76869, mae 10.01525 | val: loss 3209.26661, mae 42.78009
+finished epoch 181
+[182/200] train: loss 198.33717, mae 9.99991 | val: loss 3229.35166, mae 42.88320
+finished epoch 182
+[183/200] train: loss 198.99858, mae 9.97783 | val: loss 3215.07544, mae 42.82045
+finished epoch 183
+[184/200] train: loss 198.23744, mae 9.96232 | val: loss 3228.46786, mae 42.81530
+finished epoch 184
+[185/200] train: loss 195.30153, mae 9.92046 | val: loss 3198.86439, mae 42.68379
+finished epoch 185
+[186/200] train: loss 193.05810, mae 9.86606 | val: loss 3220.66735, mae 42.87906
+finished epoch 186
+[187/200] train: loss 194.02408, mae 9.87631 | val: loss 3272.65767, mae 43.13372
+finished epoch 187
+[188/200] train: loss 195.79305, mae 9.88379 | val: loss 3231.63302, mae 42.88461
+finished epoch 188
+[189/200] train: loss 197.02019, mae 9.87989 | val: loss 3197.08777, mae 42.69591
+finished epoch 189
+[190/200] train: loss 192.77988, mae 9.83127 | val: loss 3176.59672, mae 42.61732
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch190.pt
+finished epoch 190
+[191/200] train: loss 192.20372, mae 9.83075 | val: loss 3208.55462, mae 42.83710
+finished epoch 191
+[192/200] train: loss 189.79396, mae 9.75856 | val: loss 3196.71831, mae 42.74730
+finished epoch 192
+[193/200] train: loss 187.40473, mae 9.73768 | val: loss 3241.73844, mae 42.94381
+finished epoch 193
+[194/200] train: loss 191.68770, mae 9.79321 | val: loss 3191.01509, mae 42.68451
+finished epoch 194
+[195/200] train: loss 191.30204, mae 9.76992 | val: loss 3229.87188, mae 42.84571
+finished epoch 195
+[196/200] train: loss 190.60794, mae 9.74343 | val: loss 3209.31540, mae 42.80592
+finished epoch 196
+[197/200] train: loss 189.60219, mae 9.73504 | val: loss 3224.30971, mae 42.88340
+finished epoch 197
+[198/200] train: loss 186.38775, mae 9.67973 | val: loss 3215.14707, mae 42.78752
+finished epoch 198
+[199/200] train: loss 184.94744, mae 9.65162 | val: loss 3213.63262, mae 42.83806
+finished epoch 199
+[200/200] train: loss 185.58967, mae 9.64519 | val: loss 3228.92450, mae 42.89354
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_vel/fpn_cgm_epoch200.pt
+finished epoch 200
+Done. Best val loss: 2864.3353101942275

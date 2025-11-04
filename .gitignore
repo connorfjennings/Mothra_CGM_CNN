@@ -3,4 +3,8 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .DS_Store
-
+*.hdf5
+yt_maps/copied_from_mo/
+yt_maps/jobs/
+yt_maps/TNG50_2D_maps/
+CNN/checkpoints_test/

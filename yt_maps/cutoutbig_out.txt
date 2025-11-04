@@ -1,0 +1,10 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+Restoring modules from user's TNG_h5py
+Dataset creation took 102.4s
+>> entering parallel HDF5 open
+>> file opened
+>> groups created
+Selected globalN=24,938,586 gas cells; writing to ./cutouts/TNG50_snap099_fof000020_gas_sphere_1000kpc.hdf5
+>> wrote/closed Coordinates
+>> created dataset Velocities
+slurmstepd: error: *** JOB 46680472 ON r909u01n02 CANCELLED AT 2025-10-22T14:31:56 DUE TO TIME LIMIT ***

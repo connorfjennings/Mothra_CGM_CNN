@@ -1,0 +1,17 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) StdEnv
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 47099138.0 ON r4513u29n01 CANCELLED AT 2025-10-31T16:41:34 ***
+slurmstepd: error: *** JOB 47099138 ON r4513u29n01 CANCELLED AT 2025-10-31T16:41:34 ***
+Loaded 198 galaxies into RAM.
+Train galaxies: 158 | Test galaxies: 40
+Input mean: [-24.517551 -23.152994 -24.524752] std: [0.96422976 1.2702801  0.95941293]
+Traceback (most recent call last):
+  File "/gpfs/gibbs/project/vandokkum/cj535/CGM_Mothra/CNN/allgas_vel_train.py", line 265, in <module>
+    main()
+  File "/gpfs/gibbs/project/vandokkum/cj535/CGM_Mothra/CNN/allgas_vel_train.py", line 203, in main
+    train_ds = GalaxyPackDataset(packs, train_subids, mean=mean, std=std, r_mask=R_MASK,compression=compression)
+NameError: name 'compression' is not defined
+srun: error: r4513u26n01: task 0: Exited with exit code 1
