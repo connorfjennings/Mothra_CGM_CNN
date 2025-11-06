@@ -16,7 +16,7 @@ R_MASK = 20                     # pixels
 BATCH_SIZE = 16
 EPOCHS = 200
 FREEZE_ENCODER_EPOCHS = 10
-LR = 5e-4
+LR = 1e-3
 NUM_WORKERS = 4
 SEED = 42
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
@@ -213,8 +213,8 @@ def main():
                               persistent_workers=(NUM_WORKERS>0))
 
     # 5) model/optim
-    model = smp.FPN(
-        encoder_name="resnet50",       # good starting point; try "resnet50", "convnext_tiny", "efficientnet-b3", etc.
+    model = smp.Unet(
+        encoder_name="resnet34",       # good starting point; try "resnet50", "convnext_tiny", "efficientnet-b3", etc.
         encoder_weights="imagenet",    # <-- THIS loads pretrained encoder weights
         in_channels=3,                 # your three velocity-bin brightness maps
         classes=2,                     # 2 output channels (u, v)
@@ -226,7 +226,7 @@ def main():
     # 6) train
     #os.makedirs("checkpoints", exist_ok=True)
     best_val = float("inf")
-    best_path = os.path.join(CHECKPOINTS_DIR,"fpn_cgm_best.pt")#"checkpoints/unet_cgm_best.pt"
+    best_path = os.path.join(CHECKPOINTS_DIR,"unet_cgm_best.pt")#"checkpoints/unet_cgm_best.pt"
     for p in model.encoder.parameters(): p.requires_grad = False  # warmup 3–5 epochs
     
     for epoch in range(1, EPOCHS+1):
@@ -255,7 +255,7 @@ def main():
     
         # ----- save PERIODIC checkpoint every 10 epochs -----
         if epoch % 10 == 0:
-            periodic_path = os.path.join(CHECKPOINTS_DIR,f"fpn_cgm_epoch{epoch:03d}.pt")
+            periodic_path = os.path.join(CHECKPOINTS_DIR,f"unet_cgm_epoch{epoch:03d}.pt")
             torch.save({
                 "model": model.state_dict(),
                 "mean": mean, "std": std,

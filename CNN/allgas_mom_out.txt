@@ -2,441 +2,449 @@ The following modules were not unloaded:
   (Use "module --force purge" to unload all):
 
   1) StdEnv
-Loaded 177 galaxies into RAM.
-Train galaxies: 141 | Test galaxies: 36
-Input mean: [-24.489016 -22.973673 -24.477615] std: [0.9970848 1.215704  1.0131189]
-[001/200] train: loss 0.82834, mae 0.57533 | val: loss 0.00858, mae 0.07035
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_best.pt
+Loaded 175 galaxies into RAM.
+Train galaxies: 140 | Test galaxies: 35
+Input mean: [-24.478472 -22.955227 -24.481607] std: [1.0029856 1.2082605 1.008786 ]
+[001/200] train: loss 0.00346, mae 0.01252 | val: loss 0.00060, mae 0.00541
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 1
-[002/200] train: loss 0.07209, mae 0.20243 | val: loss 0.00483, mae 0.05103
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_best.pt
+[002/200] train: loss 0.00046, mae 0.00513 | val: loss 0.00059, mae 0.00479
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 2
-[003/200] train: loss 0.01799, mae 0.10131 | val: loss 0.00180, mae 0.02826
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_best.pt
+[003/200] train: loss 0.00045, mae 0.00457 | val: loss 0.00058, mae 0.00445
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 3
-[004/200] train: loss 0.00567, mae 0.05546 | val: loss 0.00104, mae 0.01836
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_best.pt
+[004/200] train: loss 0.00044, mae 0.00438 | val: loss 0.00058, mae 0.00428
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 4
-[005/200] train: loss 0.00237, mae 0.03392 | val: loss 0.00075, mae 0.01261
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_best.pt
+[005/200] train: loss 0.00044, mae 0.00426 | val: loss 0.00058, mae 0.00447
 finished epoch 5
-[006/200] train: loss 0.00129, mae 0.02283 | val: loss 0.00068, mae 0.01064
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_best.pt
+[006/200] train: loss 0.00044, mae 0.00425 | val: loss 0.00057, mae 0.00417
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 6
-[007/200] train: loss 0.00083, mae 0.01585 | val: loss 0.00061, mae 0.00836
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_best.pt
+[007/200] train: loss 0.00041, mae 0.00426 | val: loss 0.00057, mae 0.00467
 finished epoch 7
-[008/200] train: loss 0.00062, mae 0.01127 | val: loss 0.00059, mae 0.00770
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_best.pt
+[008/200] train: loss 0.00038, mae 0.00414 | val: loss 0.00053, mae 0.00416
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 8
-[009/200] train: loss 0.00053, mae 0.00862 | val: loss 0.00057, mae 0.00634
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_best.pt
+[009/200] train: loss 0.00036, mae 0.00410 | val: loss 0.00053, mae 0.00407
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 9
-[010/200] train: loss 0.00049, mae 0.00705 | val: loss 0.00055, mae 0.00560
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_best.pt
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch010.pt
+[010/200] train: loss 0.00034, mae 0.00404 | val: loss 0.00052, mae 0.00423
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch010.pt
 finished epoch 10
-[011/200] train: loss 0.00044, mae 0.00425 | val: loss 0.00054, mae 0.00407
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_best.pt
+[011/200] train: loss 0.00039, mae 0.00408 | val: loss 0.00052, mae 0.00409
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 11
-[012/200] train: loss 0.00044, mae 0.00420 | val: loss 0.00054, mae 0.00409
+[012/200] train: loss 0.00036, mae 0.00400 | val: loss 0.00051, mae 0.00401
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 12
-[013/200] train: loss 0.00044, mae 0.00425 | val: loss 0.00054, mae 0.00413
+[013/200] train: loss 0.00035, mae 0.00399 | val: loss 0.00052, mae 0.00393
 finished epoch 13
-[014/200] train: loss 0.00044, mae 0.00424 | val: loss 0.00054, mae 0.00458
+[014/200] train: loss 0.00035, mae 0.00397 | val: loss 0.00050, mae 0.00419
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 14
-[015/200] train: loss 0.00044, mae 0.00426 | val: loss 0.00054, mae 0.00463
+[015/200] train: loss 0.00032, mae 0.00398 | val: loss 0.00047, mae 0.00417
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 15
-[016/200] train: loss 0.00044, mae 0.00441 | val: loss 0.00054, mae 0.00413
+[016/200] train: loss 0.00031, mae 0.00394 | val: loss 0.00047, mae 0.00419
 finished epoch 16
-[017/200] train: loss 0.00044, mae 0.00431 | val: loss 0.00054, mae 0.00421
+[017/200] train: loss 0.00030, mae 0.00389 | val: loss 0.00048, mae 0.00423
 finished epoch 17
-[018/200] train: loss 0.00044, mae 0.00428 | val: loss 0.00053, mae 0.00387
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_best.pt
+[018/200] train: loss 0.00029, mae 0.00388 | val: loss 0.00047, mae 0.00396
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 18
-[019/200] train: loss 0.00044, mae 0.00431 | val: loss 0.00054, mae 0.00413
+[019/200] train: loss 0.00027, mae 0.00382 | val: loss 0.00043, mae 0.00410
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 19
-[020/200] train: loss 0.00044, mae 0.00428 | val: loss 0.00053, mae 0.00395
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch020.pt
+[020/200] train: loss 0.00026, mae 0.00379 | val: loss 0.00045, mae 0.00405
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch020.pt
 finished epoch 20
-[021/200] train: loss 0.00044, mae 0.00425 | val: loss 0.00053, mae 0.00392
+[021/200] train: loss 0.00025, mae 0.00372 | val: loss 0.00045, mae 0.00460
 finished epoch 21
-[022/200] train: loss 0.00044, mae 0.00423 | val: loss 0.00054, mae 0.00408
+[022/200] train: loss 0.00024, mae 0.00370 | val: loss 0.00043, mae 0.00389
 finished epoch 22
-[023/200] train: loss 0.00044, mae 0.00422 | val: loss 0.00054, mae 0.00436
+[023/200] train: loss 0.00023, mae 0.00367 | val: loss 0.00044, mae 0.00436
 finished epoch 23
-[024/200] train: loss 0.00045, mae 0.00460 | val: loss 0.00053, mae 0.00397
+[024/200] train: loss 0.00023, mae 0.00364 | val: loss 0.00042, mae 0.00376
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 24
-[025/200] train: loss 0.00044, mae 0.00421 | val: loss 0.00053, mae 0.00398
+[025/200] train: loss 0.00022, mae 0.00360 | val: loss 0.00042, mae 0.00373
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 25
-[026/200] train: loss 0.00044, mae 0.00414 | val: loss 0.00053, mae 0.00389
+[026/200] train: loss 0.00023, mae 0.00364 | val: loss 0.00044, mae 0.00375
 finished epoch 26
-[027/200] train: loss 0.00044, mae 0.00407 | val: loss 0.00053, mae 0.00378
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_best.pt
+[027/200] train: loss 0.00021, mae 0.00350 | val: loss 0.00043, mae 0.00391
 finished epoch 27
-[028/200] train: loss 0.00044, mae 0.00404 | val: loss 0.00054, mae 0.00382
+[028/200] train: loss 0.00020, mae 0.00350 | val: loss 0.00043, mae 0.00374
 finished epoch 28
-[029/200] train: loss 0.00044, mae 0.00406 | val: loss 0.00054, mae 0.00378
+[029/200] train: loss 0.00019, mae 0.00348 | val: loss 0.00042, mae 0.00381
 finished epoch 29
-[030/200] train: loss 0.00044, mae 0.00399 | val: loss 0.00053, mae 0.00381
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch030.pt
+[030/200] train: loss 0.00019, mae 0.00348 | val: loss 0.00041, mae 0.00378
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch030.pt
 finished epoch 30
-[031/200] train: loss 0.00044, mae 0.00402 | val: loss 0.00053, mae 0.00393
+[031/200] train: loss 0.00018, mae 0.00340 | val: loss 0.00042, mae 0.00385
 finished epoch 31
-[032/200] train: loss 0.00044, mae 0.00399 | val: loss 0.00053, mae 0.00377
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_best.pt
+[032/200] train: loss 0.00018, mae 0.00336 | val: loss 0.00042, mae 0.00388
 finished epoch 32
-[033/200] train: loss 0.00044, mae 0.00398 | val: loss 0.00053, mae 0.00381
+[033/200] train: loss 0.00018, mae 0.00342 | val: loss 0.00042, mae 0.00369
 finished epoch 33
-[034/200] train: loss 0.00044, mae 0.00399 | val: loss 0.00054, mae 0.00383
+[034/200] train: loss 0.00017, mae 0.00334 | val: loss 0.00042, mae 0.00369
 finished epoch 34
-[035/200] train: loss 0.00045, mae 0.00431 | val: loss 0.00053, mae 0.00379
+[035/200] train: loss 0.00016, mae 0.00328 | val: loss 0.00042, mae 0.00373
 finished epoch 35
-[036/200] train: loss 0.00044, mae 0.00399 | val: loss 0.00053, mae 0.00383
+[036/200] train: loss 0.00017, mae 0.00333 | val: loss 0.00042, mae 0.00369
 finished epoch 36
-[037/200] train: loss 0.00043, mae 0.00398 | val: loss 0.00054, mae 0.00377
+[037/200] train: loss 0.00016, mae 0.00330 | val: loss 0.00043, mae 0.00368
 finished epoch 37
-[038/200] train: loss 0.00043, mae 0.00398 | val: loss 0.00053, mae 0.00380
+[038/200] train: loss 0.00016, mae 0.00324 | val: loss 0.00042, mae 0.00356
 finished epoch 38
-[039/200] train: loss 0.00043, mae 0.00399 | val: loss 0.00054, mae 0.00378
+[039/200] train: loss 0.00015, mae 0.00321 | val: loss 0.00042, mae 0.00375
 finished epoch 39
-[040/200] train: loss 0.00043, mae 0.00398 | val: loss 0.00054, mae 0.00378
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch040.pt
+[040/200] train: loss 0.00015, mae 0.00320 | val: loss 0.00042, mae 0.00353
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch040.pt
 finished epoch 40
-[041/200] train: loss 0.00043, mae 0.00397 | val: loss 0.00054, mae 0.00384
+[041/200] train: loss 0.00015, mae 0.00318 | val: loss 0.00041, mae 0.00357
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 41
-[042/200] train: loss 0.00043, mae 0.00398 | val: loss 0.00054, mae 0.00379
+[042/200] train: loss 0.00014, mae 0.00315 | val: loss 0.00043, mae 0.00371
 finished epoch 42
-[043/200] train: loss 0.00042, mae 0.00398 | val: loss 0.00054, mae 0.00381
+[043/200] train: loss 0.00014, mae 0.00318 | val: loss 0.00044, mae 0.00365
 finished epoch 43
-[044/200] train: loss 0.00042, mae 0.00398 | val: loss 0.00054, mae 0.00380
+[044/200] train: loss 0.00014, mae 0.00316 | val: loss 0.00043, mae 0.00369
 finished epoch 44
-[045/200] train: loss 0.00042, mae 0.00397 | val: loss 0.00054, mae 0.00381
+[045/200] train: loss 0.00014, mae 0.00312 | val: loss 0.00041, mae 0.00358
 finished epoch 45
-[046/200] train: loss 0.00042, mae 0.00397 | val: loss 0.00054, mae 0.00383
+[046/200] train: loss 0.00013, mae 0.00305 | val: loss 0.00042, mae 0.00368
 finished epoch 46
-[047/200] train: loss 0.00042, mae 0.00398 | val: loss 0.00055, mae 0.00380
+[047/200] train: loss 0.00013, mae 0.00308 | val: loss 0.00043, mae 0.00375
 finished epoch 47
-[048/200] train: loss 0.00042, mae 0.00398 | val: loss 0.00055, mae 0.00381
+[048/200] train: loss 0.00013, mae 0.00304 | val: loss 0.00042, mae 0.00362
 finished epoch 48
-[049/200] train: loss 0.00041, mae 0.00397 | val: loss 0.00055, mae 0.00384
+[049/200] train: loss 0.00012, mae 0.00302 | val: loss 0.00042, mae 0.00355
 finished epoch 49
-[050/200] train: loss 0.00041, mae 0.00398 | val: loss 0.00055, mae 0.00379
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch050.pt
+[050/200] train: loss 0.00012, mae 0.00300 | val: loss 0.00042, mae 0.00371
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch050.pt
 finished epoch 50
-[051/200] train: loss 0.00041, mae 0.00397 | val: loss 0.00056, mae 0.00381
+[051/200] train: loss 0.00012, mae 0.00298 | val: loss 0.00043, mae 0.00374
 finished epoch 51
-[052/200] train: loss 0.00041, mae 0.00396 | val: loss 0.00054, mae 0.00379
+[052/200] train: loss 0.00012, mae 0.00294 | val: loss 0.00043, mae 0.00357
 finished epoch 52
-[053/200] train: loss 0.00040, mae 0.00397 | val: loss 0.00055, mae 0.00386
+[053/200] train: loss 0.00012, mae 0.00293 | val: loss 0.00042, mae 0.00363
 finished epoch 53
-[054/200] train: loss 0.00040, mae 0.00396 | val: loss 0.00055, mae 0.00391
+[054/200] train: loss 0.00011, mae 0.00292 | val: loss 0.00041, mae 0.00351
 finished epoch 54
-[055/200] train: loss 0.00040, mae 0.00396 | val: loss 0.00055, mae 0.00382
+[055/200] train: loss 0.00011, mae 0.00289 | val: loss 0.00042, mae 0.00349
 finished epoch 55
-[056/200] train: loss 0.00039, mae 0.00396 | val: loss 0.00058, mae 0.00385
+[056/200] train: loss 0.00011, mae 0.00287 | val: loss 0.00043, mae 0.00366
 finished epoch 56
-[057/200] train: loss 0.00039, mae 0.00395 | val: loss 0.00055, mae 0.00383
+[057/200] train: loss 0.00012, mae 0.00296 | val: loss 0.00042, mae 0.00363
 finished epoch 57
-[058/200] train: loss 0.00039, mae 0.00396 | val: loss 0.00055, mae 0.00380
+[058/200] train: loss 0.00011, mae 0.00288 | val: loss 0.00042, mae 0.00357
 finished epoch 58
-[059/200] train: loss 0.00038, mae 0.00395 | val: loss 0.00060, mae 0.00386
+[059/200] train: loss 0.00010, mae 0.00282 | val: loss 0.00042, mae 0.00361
 finished epoch 59
-[060/200] train: loss 0.00038, mae 0.00396 | val: loss 0.00057, mae 0.00384
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch060.pt
+[060/200] train: loss 0.00010, mae 0.00278 | val: loss 0.00042, mae 0.00351
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch060.pt
 finished epoch 60
-[061/200] train: loss 0.00038, mae 0.00395 | val: loss 0.00057, mae 0.00388
+[061/200] train: loss 0.00010, mae 0.00279 | val: loss 0.00043, mae 0.00356
 finished epoch 61
-[062/200] train: loss 0.00037, mae 0.00394 | val: loss 0.00056, mae 0.00381
+[062/200] train: loss 0.00010, mae 0.00275 | val: loss 0.00042, mae 0.00353
 finished epoch 62
-[063/200] train: loss 0.00037, mae 0.00394 | val: loss 0.00058, mae 0.00387
+[063/200] train: loss 0.00010, mae 0.00271 | val: loss 0.00042, mae 0.00380
 finished epoch 63
-[064/200] train: loss 0.00037, mae 0.00394 | val: loss 0.00056, mae 0.00382
+[064/200] train: loss 0.00010, mae 0.00271 | val: loss 0.00042, mae 0.00344
 finished epoch 64
-[065/200] train: loss 0.00036, mae 0.00393 | val: loss 0.00057, mae 0.00383
+[065/200] train: loss 0.00009, mae 0.00269 | val: loss 0.00041, mae 0.00350
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 65
-[066/200] train: loss 0.00036, mae 0.00393 | val: loss 0.00057, mae 0.00385
+[066/200] train: loss 0.00010, mae 0.00268 | val: loss 0.00042, mae 0.00348
 finished epoch 66
-[067/200] train: loss 0.00036, mae 0.00392 | val: loss 0.00056, mae 0.00386
+[067/200] train: loss 0.00009, mae 0.00268 | val: loss 0.00042, mae 0.00347
 finished epoch 67
-[068/200] train: loss 0.00035, mae 0.00393 | val: loss 0.00056, mae 0.00383
+[068/200] train: loss 0.00009, mae 0.00261 | val: loss 0.00042, mae 0.00358
 finished epoch 68
-[069/200] train: loss 0.00034, mae 0.00392 | val: loss 0.00056, mae 0.00384
+[069/200] train: loss 0.00009, mae 0.00266 | val: loss 0.00042, mae 0.00355
 finished epoch 69
-[070/200] train: loss 0.00034, mae 0.00390 | val: loss 0.00058, mae 0.00392
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch070.pt
+[070/200] train: loss 0.00009, mae 0.00263 | val: loss 0.00042, mae 0.00362
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch070.pt
 finished epoch 70
-[071/200] train: loss 0.00033, mae 0.00389 | val: loss 0.00057, mae 0.00386
+[071/200] train: loss 0.00009, mae 0.00257 | val: loss 0.00042, mae 0.00350
 finished epoch 71
-[072/200] train: loss 0.00032, mae 0.00388 | val: loss 0.00055, mae 0.00388
+[072/200] train: loss 0.00009, mae 0.00259 | val: loss 0.00042, mae 0.00353
 finished epoch 72
-[073/200] train: loss 0.00031, mae 0.00385 | val: loss 0.00058, mae 0.00386
+[073/200] train: loss 0.00009, mae 0.00256 | val: loss 0.00042, mae 0.00344
 finished epoch 73
-[074/200] train: loss 0.00030, mae 0.00381 | val: loss 0.00058, mae 0.00394
+[074/200] train: loss 0.00009, mae 0.00253 | val: loss 0.00042, mae 0.00348
 finished epoch 74
-[075/200] train: loss 0.00029, mae 0.00380 | val: loss 0.00057, mae 0.00387
+[075/200] train: loss 0.00009, mae 0.00252 | val: loss 0.00041, mae 0.00343
 finished epoch 75
-[076/200] train: loss 0.00029, mae 0.00379 | val: loss 0.00060, mae 0.00399
+[076/200] train: loss 0.00008, mae 0.00252 | val: loss 0.00041, mae 0.00348
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 76
-[077/200] train: loss 0.00028, mae 0.00377 | val: loss 0.00058, mae 0.00386
+[077/200] train: loss 0.00008, mae 0.00250 | val: loss 0.00041, mae 0.00341
 finished epoch 77
-[078/200] train: loss 0.00027, mae 0.00375 | val: loss 0.00058, mae 0.00398
+[078/200] train: loss 0.00008, mae 0.00250 | val: loss 0.00041, mae 0.00348
 finished epoch 78
-[079/200] train: loss 0.00028, mae 0.00376 | val: loss 0.00057, mae 0.00390
+[079/200] train: loss 0.00008, mae 0.00246 | val: loss 0.00041, mae 0.00359
 finished epoch 79
-[080/200] train: loss 0.00027, mae 0.00372 | val: loss 0.00058, mae 0.00397
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch080.pt
+[080/200] train: loss 0.00008, mae 0.00244 | val: loss 0.00041, mae 0.00335
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch080.pt
 finished epoch 80
-[081/200] train: loss 0.00028, mae 0.00376 | val: loss 0.00057, mae 0.00388
+[081/200] train: loss 0.00008, mae 0.00242 | val: loss 0.00042, mae 0.00344
 finished epoch 81
-[082/200] train: loss 0.00026, mae 0.00371 | val: loss 0.00058, mae 0.00396
+[082/200] train: loss 0.00008, mae 0.00240 | val: loss 0.00041, mae 0.00344
 finished epoch 82
-[083/200] train: loss 0.00026, mae 0.00369 | val: loss 0.00059, mae 0.00397
+[083/200] train: loss 0.00008, mae 0.00241 | val: loss 0.00041, mae 0.00348
 finished epoch 83
-[084/200] train: loss 0.00025, mae 0.00368 | val: loss 0.00057, mae 0.00389
+[084/200] train: loss 0.00008, mae 0.00239 | val: loss 0.00041, mae 0.00340
 finished epoch 84
-[085/200] train: loss 0.00025, mae 0.00367 | val: loss 0.00058, mae 0.00396
+[085/200] train: loss 0.00008, mae 0.00239 | val: loss 0.00041, mae 0.00336
 finished epoch 85
-[086/200] train: loss 0.00025, mae 0.00366 | val: loss 0.00058, mae 0.00393
+[086/200] train: loss 0.00008, mae 0.00238 | val: loss 0.00041, mae 0.00339
 finished epoch 86
-[087/200] train: loss 0.00024, mae 0.00364 | val: loss 0.00057, mae 0.00386
+[087/200] train: loss 0.00008, mae 0.00238 | val: loss 0.00041, mae 0.00359
 finished epoch 87
-[088/200] train: loss 0.00024, mae 0.00363 | val: loss 0.00058, mae 0.00393
+[088/200] train: loss 0.00007, mae 0.00234 | val: loss 0.00042, mae 0.00352
 finished epoch 88
-[089/200] train: loss 0.00024, mae 0.00364 | val: loss 0.00059, mae 0.00397
+[089/200] train: loss 0.00007, mae 0.00230 | val: loss 0.00041, mae 0.00344
 finished epoch 89
-[090/200] train: loss 0.00024, mae 0.00362 | val: loss 0.00058, mae 0.00394
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch090.pt
+[090/200] train: loss 0.00007, mae 0.00230 | val: loss 0.00042, mae 0.00344
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch090.pt
 finished epoch 90
-[091/200] train: loss 0.00024, mae 0.00360 | val: loss 0.00058, mae 0.00389
+[091/200] train: loss 0.00007, mae 0.00232 | val: loss 0.00041, mae 0.00347
 finished epoch 91
-[092/200] train: loss 0.00023, mae 0.00359 | val: loss 0.00058, mae 0.00390
+[092/200] train: loss 0.00007, mae 0.00229 | val: loss 0.00041, mae 0.00344
 finished epoch 92
-[093/200] train: loss 0.00023, mae 0.00358 | val: loss 0.00058, mae 0.00398
+[093/200] train: loss 0.00007, mae 0.00227 | val: loss 0.00041, mae 0.00339
 finished epoch 93
-[094/200] train: loss 0.00023, mae 0.00357 | val: loss 0.00059, mae 0.00394
+[094/200] train: loss 0.00007, mae 0.00227 | val: loss 0.00041, mae 0.00344
 finished epoch 94
-[095/200] train: loss 0.00023, mae 0.00356 | val: loss 0.00057, mae 0.00390
+[095/200] train: loss 0.00007, mae 0.00227 | val: loss 0.00041, mae 0.00334
 finished epoch 95
-[096/200] train: loss 0.00023, mae 0.00355 | val: loss 0.00057, mae 0.00407
+[096/200] train: loss 0.00007, mae 0.00226 | val: loss 0.00041, mae 0.00338
 finished epoch 96
-[097/200] train: loss 0.00022, mae 0.00353 | val: loss 0.00059, mae 0.00399
+[097/200] train: loss 0.00007, mae 0.00224 | val: loss 0.00041, mae 0.00372
 finished epoch 97
-[098/200] train: loss 0.00022, mae 0.00352 | val: loss 0.00058, mae 0.00394
+[098/200] train: loss 0.00007, mae 0.00224 | val: loss 0.00041, mae 0.00358
 finished epoch 98
-[099/200] train: loss 0.00023, mae 0.00358 | val: loss 0.00060, mae 0.00401
+[099/200] train: loss 0.00007, mae 0.00223 | val: loss 0.00041, mae 0.00344
 finished epoch 99
-[100/200] train: loss 0.00022, mae 0.00354 | val: loss 0.00058, mae 0.00401
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch100.pt
+[100/200] train: loss 0.00007, mae 0.00222 | val: loss 0.00041, mae 0.00337
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch100.pt
 finished epoch 100
-[101/200] train: loss 0.00022, mae 0.00349 | val: loss 0.00061, mae 0.00405
+[101/200] train: loss 0.00007, mae 0.00222 | val: loss 0.00041, mae 0.00347
 finished epoch 101
-[102/200] train: loss 0.00021, mae 0.00346 | val: loss 0.00059, mae 0.00403
+[102/200] train: loss 0.00007, mae 0.00221 | val: loss 0.00042, mae 0.00347
 finished epoch 102
-[103/200] train: loss 0.00021, mae 0.00345 | val: loss 0.00059, mae 0.00399
+[103/200] train: loss 0.00006, mae 0.00219 | val: loss 0.00041, mae 0.00355
 finished epoch 103
-[104/200] train: loss 0.00021, mae 0.00344 | val: loss 0.00059, mae 0.00407
+[104/200] train: loss 0.00007, mae 0.00220 | val: loss 0.00041, mae 0.00338
 finished epoch 104
-[105/200] train: loss 0.00021, mae 0.00342 | val: loss 0.00059, mae 0.00411
+[105/200] train: loss 0.00006, mae 0.00216 | val: loss 0.00041, mae 0.00346
 finished epoch 105
-[106/200] train: loss 0.00021, mae 0.00340 | val: loss 0.00057, mae 0.00398
+[106/200] train: loss 0.00006, mae 0.00216 | val: loss 0.00041, mae 0.00349
 finished epoch 106
-[107/200] train: loss 0.00021, mae 0.00339 | val: loss 0.00061, mae 0.00423
+[107/200] train: loss 0.00006, mae 0.00217 | val: loss 0.00041, mae 0.00341
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 107
-[108/200] train: loss 0.00021, mae 0.00336 | val: loss 0.00058, mae 0.00407
+[108/200] train: loss 0.00006, mae 0.00214 | val: loss 0.00041, mae 0.00338
 finished epoch 108
-[109/200] train: loss 0.00021, mae 0.00332 | val: loss 0.00060, mae 0.00430
+[109/200] train: loss 0.00006, mae 0.00213 | val: loss 0.00041, mae 0.00345
 finished epoch 109
-[110/200] train: loss 0.00020, mae 0.00331 | val: loss 0.00058, mae 0.00397
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch110.pt
+[110/200] train: loss 0.00006, mae 0.00215 | val: loss 0.00041, mae 0.00334
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch110.pt
 finished epoch 110
-[111/200] train: loss 0.00020, mae 0.00327 | val: loss 0.00058, mae 0.00411
+[111/200] train: loss 0.00006, mae 0.00213 | val: loss 0.00041, mae 0.00335
 finished epoch 111
-[112/200] train: loss 0.00020, mae 0.00325 | val: loss 0.00059, mae 0.00419
+[112/200] train: loss 0.00006, mae 0.00212 | val: loss 0.00041, mae 0.00352
 finished epoch 112
-[113/200] train: loss 0.00025, mae 0.00354 | val: loss 0.00060, mae 0.00407
+[113/200] train: loss 0.00006, mae 0.00212 | val: loss 0.00041, mae 0.00354
 finished epoch 113
-[114/200] train: loss 0.00021, mae 0.00333 | val: loss 0.00058, mae 0.00415
+[114/200] train: loss 0.00006, mae 0.00214 | val: loss 0.00041, mae 0.00341
 finished epoch 114
-[115/200] train: loss 0.00020, mae 0.00323 | val: loss 0.00058, mae 0.00411
+[115/200] train: loss 0.00006, mae 0.00210 | val: loss 0.00042, mae 0.00346
 finished epoch 115
-[116/200] train: loss 0.00020, mae 0.00320 | val: loss 0.00058, mae 0.00396
+[116/200] train: loss 0.00006, mae 0.00208 | val: loss 0.00041, mae 0.00346
 finished epoch 116
-[117/200] train: loss 0.00020, mae 0.00319 | val: loss 0.00058, mae 0.00403
+[117/200] train: loss 0.00006, mae 0.00207 | val: loss 0.00041, mae 0.00337
 finished epoch 117
-[118/200] train: loss 0.00020, mae 0.00318 | val: loss 0.00059, mae 0.00417
+[118/200] train: loss 0.00006, mae 0.00209 | val: loss 0.00041, mae 0.00336
 finished epoch 118
-[119/200] train: loss 0.00020, mae 0.00317 | val: loss 0.00059, mae 0.00420
+[119/200] train: loss 0.00006, mae 0.00207 | val: loss 0.00041, mae 0.00344
 finished epoch 119
-[120/200] train: loss 0.00020, mae 0.00314 | val: loss 0.00059, mae 0.00408
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch120.pt
+[120/200] train: loss 0.00006, mae 0.00206 | val: loss 0.00042, mae 0.00351
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch120.pt
 finished epoch 120
-[121/200] train: loss 0.00020, mae 0.00314 | val: loss 0.00058, mae 0.00406
+[121/200] train: loss 0.00006, mae 0.00205 | val: loss 0.00041, mae 0.00357
 finished epoch 121
-[122/200] train: loss 0.00020, mae 0.00312 | val: loss 0.00058, mae 0.00409
+[122/200] train: loss 0.00006, mae 0.00205 | val: loss 0.00042, mae 0.00337
 finished epoch 122
-[123/200] train: loss 0.00019, mae 0.00311 | val: loss 0.00059, mae 0.00411
+[123/200] train: loss 0.00006, mae 0.00205 | val: loss 0.00041, mae 0.00350
 finished epoch 123
-[124/200] train: loss 0.00019, mae 0.00310 | val: loss 0.00059, mae 0.00417
+[124/200] train: loss 0.00006, mae 0.00203 | val: loss 0.00041, mae 0.00337
 finished epoch 124
-[125/200] train: loss 0.00019, mae 0.00308 | val: loss 0.00058, mae 0.00412
+[125/200] train: loss 0.00006, mae 0.00203 | val: loss 0.00041, mae 0.00342
 finished epoch 125
-[126/200] train: loss 0.00019, mae 0.00307 | val: loss 0.00058, mae 0.00402
+[126/200] train: loss 0.00006, mae 0.00203 | val: loss 0.00041, mae 0.00334
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_best.pt
 finished epoch 126
-[127/200] train: loss 0.00019, mae 0.00307 | val: loss 0.00057, mae 0.00396
+[127/200] train: loss 0.00005, mae 0.00199 | val: loss 0.00041, mae 0.00338
 finished epoch 127
-[128/200] train: loss 0.00019, mae 0.00305 | val: loss 0.00057, mae 0.00409
+[128/200] train: loss 0.00006, mae 0.00201 | val: loss 0.00041, mae 0.00341
 finished epoch 128
-[129/200] train: loss 0.00019, mae 0.00303 | val: loss 0.00057, mae 0.00392
+[129/200] train: loss 0.00006, mae 0.00201 | val: loss 0.00041, mae 0.00333
 finished epoch 129
-[130/200] train: loss 0.00019, mae 0.00301 | val: loss 0.00059, mae 0.00406
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch130.pt
+[130/200] train: loss 0.00005, mae 0.00201 | val: loss 0.00041, mae 0.00343
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch130.pt
 finished epoch 130
-[131/200] train: loss 0.00019, mae 0.00301 | val: loss 0.00059, mae 0.00411
+[131/200] train: loss 0.00005, mae 0.00198 | val: loss 0.00041, mae 0.00335
 finished epoch 131
-[132/200] train: loss 0.00019, mae 0.00299 | val: loss 0.00058, mae 0.00414
+[132/200] train: loss 0.00005, mae 0.00199 | val: loss 0.00041, mae 0.00351
 finished epoch 132
-[133/200] train: loss 0.00019, mae 0.00298 | val: loss 0.00059, mae 0.00412
+[133/200] train: loss 0.00005, mae 0.00196 | val: loss 0.00041, mae 0.00338
 finished epoch 133
-[134/200] train: loss 0.00019, mae 0.00297 | val: loss 0.00058, mae 0.00412
+[134/200] train: loss 0.00005, mae 0.00196 | val: loss 0.00041, mae 0.00351
 finished epoch 134
-[135/200] train: loss 0.00019, mae 0.00295 | val: loss 0.00059, mae 0.00422
+[135/200] train: loss 0.00005, mae 0.00198 | val: loss 0.00041, mae 0.00338
 finished epoch 135
-[136/200] train: loss 0.00019, mae 0.00293 | val: loss 0.00059, mae 0.00412
+[136/200] train: loss 0.00005, mae 0.00197 | val: loss 0.00041, mae 0.00337
 finished epoch 136
-[137/200] train: loss 0.00019, mae 0.00292 | val: loss 0.00058, mae 0.00408
+[137/200] train: loss 0.00005, mae 0.00194 | val: loss 0.00041, mae 0.00346
 finished epoch 137
-[138/200] train: loss 0.00019, mae 0.00291 | val: loss 0.00059, mae 0.00439
+[138/200] train: loss 0.00005, mae 0.00194 | val: loss 0.00042, mae 0.00345
 finished epoch 138
-[139/200] train: loss 0.00019, mae 0.00290 | val: loss 0.00058, mae 0.00405
+[139/200] train: loss 0.00005, mae 0.00191 | val: loss 0.00041, mae 0.00345
 finished epoch 139
-[140/200] train: loss 0.00018, mae 0.00289 | val: loss 0.00059, mae 0.00417
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch140.pt
+[140/200] train: loss 0.00005, mae 0.00193 | val: loss 0.00041, mae 0.00346
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch140.pt
 finished epoch 140
-[141/200] train: loss 0.00018, mae 0.00286 | val: loss 0.00059, mae 0.00420
+[141/200] train: loss 0.00005, mae 0.00192 | val: loss 0.00041, mae 0.00339
 finished epoch 141
-[142/200] train: loss 0.00018, mae 0.00285 | val: loss 0.00058, mae 0.00405
+[142/200] train: loss 0.00005, mae 0.00192 | val: loss 0.00041, mae 0.00338
 finished epoch 142
-[143/200] train: loss 0.00018, mae 0.00285 | val: loss 0.00059, mae 0.00411
+[143/200] train: loss 0.00005, mae 0.00190 | val: loss 0.00041, mae 0.00338
 finished epoch 143
-[144/200] train: loss 0.00018, mae 0.00283 | val: loss 0.00058, mae 0.00412
+[144/200] train: loss 0.00005, mae 0.00193 | val: loss 0.00041, mae 0.00344
 finished epoch 144
-[145/200] train: loss 0.00018, mae 0.00282 | val: loss 0.00058, mae 0.00405
+[145/200] train: loss 0.00005, mae 0.00190 | val: loss 0.00042, mae 0.00349
 finished epoch 145
-[146/200] train: loss 0.00018, mae 0.00281 | val: loss 0.00058, mae 0.00402
+[146/200] train: loss 0.00005, mae 0.00190 | val: loss 0.00041, mae 0.00336
 finished epoch 146
-[147/200] train: loss 0.00018, mae 0.00279 | val: loss 0.00057, mae 0.00415
+[147/200] train: loss 0.00005, mae 0.00187 | val: loss 0.00041, mae 0.00345
 finished epoch 147
-[148/200] train: loss 0.00018, mae 0.00278 | val: loss 0.00059, mae 0.00413
+[148/200] train: loss 0.00005, mae 0.00191 | val: loss 0.00041, mae 0.00350
 finished epoch 148
-[149/200] train: loss 0.00018, mae 0.00276 | val: loss 0.00058, mae 0.00408
+[149/200] train: loss 0.00005, mae 0.00189 | val: loss 0.00041, mae 0.00341
 finished epoch 149
-[150/200] train: loss 0.00018, mae 0.00277 | val: loss 0.00058, mae 0.00409
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch150.pt
+[150/200] train: loss 0.00005, mae 0.00186 | val: loss 0.00041, mae 0.00335
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch150.pt
 finished epoch 150
-[151/200] train: loss 0.00018, mae 0.00276 | val: loss 0.00060, mae 0.00417
+[151/200] train: loss 0.00005, mae 0.00186 | val: loss 0.00041, mae 0.00335
 finished epoch 151
-[152/200] train: loss 0.00018, mae 0.00279 | val: loss 0.00058, mae 0.00408
+[152/200] train: loss 0.00005, mae 0.00185 | val: loss 0.00041, mae 0.00339
 finished epoch 152
-[153/200] train: loss 0.00018, mae 0.00281 | val: loss 0.00059, mae 0.00410
+[153/200] train: loss 0.00005, mae 0.00184 | val: loss 0.00041, mae 0.00348
 finished epoch 153
-[154/200] train: loss 0.00018, mae 0.00274 | val: loss 0.00058, mae 0.00417
+[154/200] train: loss 0.00005, mae 0.00189 | val: loss 0.00041, mae 0.00338
 finished epoch 154
-[155/200] train: loss 0.00018, mae 0.00271 | val: loss 0.00058, mae 0.00407
+[155/200] train: loss 0.00005, mae 0.00184 | val: loss 0.00041, mae 0.00338
 finished epoch 155
-[156/200] train: loss 0.00018, mae 0.00269 | val: loss 0.00057, mae 0.00404
+[156/200] train: loss 0.00005, mae 0.00184 | val: loss 0.00041, mae 0.00337
 finished epoch 156
-[157/200] train: loss 0.00018, mae 0.00269 | val: loss 0.00057, mae 0.00406
+[157/200] train: loss 0.00005, mae 0.00184 | val: loss 0.00041, mae 0.00339
 finished epoch 157
-[158/200] train: loss 0.00018, mae 0.00269 | val: loss 0.00058, mae 0.00415
+[158/200] train: loss 0.00005, mae 0.00182 | val: loss 0.00042, mae 0.00344
 finished epoch 158
-[159/200] train: loss 0.00018, mae 0.00269 | val: loss 0.00058, mae 0.00407
+[159/200] train: loss 0.00005, mae 0.00182 | val: loss 0.00041, mae 0.00340
 finished epoch 159
-[160/200] train: loss 0.00018, mae 0.00267 | val: loss 0.00057, mae 0.00411
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch160.pt
+[160/200] train: loss 0.00005, mae 0.00182 | val: loss 0.00041, mae 0.00334
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch160.pt
 finished epoch 160
-[161/200] train: loss 0.00018, mae 0.00265 | val: loss 0.00057, mae 0.00405
+[161/200] train: loss 0.00005, mae 0.00183 | val: loss 0.00041, mae 0.00345
 finished epoch 161
-[162/200] train: loss 0.00018, mae 0.00263 | val: loss 0.00058, mae 0.00421
+[162/200] train: loss 0.00005, mae 0.00182 | val: loss 0.00041, mae 0.00338
 finished epoch 162
-[163/200] train: loss 0.00018, mae 0.00263 | val: loss 0.00057, mae 0.00408
+[163/200] train: loss 0.00005, mae 0.00181 | val: loss 0.00041, mae 0.00341
 finished epoch 163
-[164/200] train: loss 0.00018, mae 0.00262 | val: loss 0.00057, mae 0.00413
+[164/200] train: loss 0.00005, mae 0.00180 | val: loss 0.00042, mae 0.00339
 finished epoch 164
-[165/200] train: loss 0.00018, mae 0.00263 | val: loss 0.00058, mae 0.00414
+[165/200] train: loss 0.00005, mae 0.00183 | val: loss 0.00042, mae 0.00348
 finished epoch 165
-[166/200] train: loss 0.00017, mae 0.00260 | val: loss 0.00058, mae 0.00415
+[166/200] train: loss 0.00005, mae 0.00182 | val: loss 0.00042, mae 0.00335
 finished epoch 166
-[167/200] train: loss 0.00018, mae 0.00260 | val: loss 0.00058, mae 0.00417
+[167/200] train: loss 0.00005, mae 0.00179 | val: loss 0.00041, mae 0.00337
 finished epoch 167
-[168/200] train: loss 0.00018, mae 0.00259 | val: loss 0.00058, mae 0.00411
+[168/200] train: loss 0.00004, mae 0.00179 | val: loss 0.00041, mae 0.00339
 finished epoch 168
-[169/200] train: loss 0.00018, mae 0.00259 | val: loss 0.00057, mae 0.00411
+[169/200] train: loss 0.00005, mae 0.00179 | val: loss 0.00041, mae 0.00339
 finished epoch 169
-[170/200] train: loss 0.00018, mae 0.00259 | val: loss 0.00057, mae 0.00415
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch170.pt
+[170/200] train: loss 0.00004, mae 0.00178 | val: loss 0.00041, mae 0.00337
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch170.pt
 finished epoch 170
-[171/200] train: loss 0.00017, mae 0.00256 | val: loss 0.00057, mae 0.00409
+[171/200] train: loss 0.00004, mae 0.00176 | val: loss 0.00042, mae 0.00336
 finished epoch 171
-[172/200] train: loss 0.00017, mae 0.00255 | val: loss 0.00057, mae 0.00412
+[172/200] train: loss 0.00004, mae 0.00176 | val: loss 0.00042, mae 0.00349
 finished epoch 172
-[173/200] train: loss 0.00017, mae 0.00256 | val: loss 0.00059, mae 0.00429
+[173/200] train: loss 0.00004, mae 0.00177 | val: loss 0.00041, mae 0.00348
 finished epoch 173
-[174/200] train: loss 0.00017, mae 0.00254 | val: loss 0.00057, mae 0.00404
+[174/200] train: loss 0.00004, mae 0.00178 | val: loss 0.00042, mae 0.00344
 finished epoch 174
-[175/200] train: loss 0.00017, mae 0.00254 | val: loss 0.00059, mae 0.00437
+[175/200] train: loss 0.00004, mae 0.00178 | val: loss 0.00041, mae 0.00341
 finished epoch 175
-[176/200] train: loss 0.00017, mae 0.00252 | val: loss 0.00057, mae 0.00412
+[176/200] train: loss 0.00004, mae 0.00176 | val: loss 0.00041, mae 0.00338
 finished epoch 176
-[177/200] train: loss 0.00017, mae 0.00251 | val: loss 0.00058, mae 0.00417
+[177/200] train: loss 0.00004, mae 0.00174 | val: loss 0.00041, mae 0.00335
 finished epoch 177
-[178/200] train: loss 0.00017, mae 0.00249 | val: loss 0.00058, mae 0.00429
+[178/200] train: loss 0.00004, mae 0.00178 | val: loss 0.00041, mae 0.00338
 finished epoch 178
-[179/200] train: loss 0.00017, mae 0.00250 | val: loss 0.00057, mae 0.00419
+[179/200] train: loss 0.00004, mae 0.00175 | val: loss 0.00042, mae 0.00338
 finished epoch 179
-[180/200] train: loss 0.00017, mae 0.00249 | val: loss 0.00058, mae 0.00423
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch180.pt
+[180/200] train: loss 0.00004, mae 0.00175 | val: loss 0.00042, mae 0.00335
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch180.pt
 finished epoch 180
-[181/200] train: loss 0.00017, mae 0.00248 | val: loss 0.00058, mae 0.00425
+[181/200] train: loss 0.00004, mae 0.00174 | val: loss 0.00041, mae 0.00344
 finished epoch 181
-[182/200] train: loss 0.00017, mae 0.00248 | val: loss 0.00058, mae 0.00421
+[182/200] train: loss 0.00004, mae 0.00176 | val: loss 0.00041, mae 0.00336
 finished epoch 182
-[183/200] train: loss 0.00017, mae 0.00247 | val: loss 0.00058, mae 0.00428
+[183/200] train: loss 0.00004, mae 0.00174 | val: loss 0.00041, mae 0.00338
 finished epoch 183
-[184/200] train: loss 0.00017, mae 0.00248 | val: loss 0.00058, mae 0.00416
+[184/200] train: loss 0.00004, mae 0.00174 | val: loss 0.00042, mae 0.00335
 finished epoch 184
-[185/200] train: loss 0.00017, mae 0.00245 | val: loss 0.00058, mae 0.00413
+[185/200] train: loss 0.00004, mae 0.00174 | val: loss 0.00041, mae 0.00343
 finished epoch 185
-[186/200] train: loss 0.00017, mae 0.00245 | val: loss 0.00058, mae 0.00419
+[186/200] train: loss 0.00004, mae 0.00172 | val: loss 0.00041, mae 0.00335
 finished epoch 186
-[187/200] train: loss 0.00017, mae 0.00244 | val: loss 0.00059, mae 0.00433
+[187/200] train: loss 0.00004, mae 0.00174 | val: loss 0.00042, mae 0.00338
 finished epoch 187
-[188/200] train: loss 0.00017, mae 0.00244 | val: loss 0.00057, mae 0.00406
+[188/200] train: loss 0.00004, mae 0.00172 | val: loss 0.00041, mae 0.00341
 finished epoch 188
-[189/200] train: loss 0.00017, mae 0.00243 | val: loss 0.00057, mae 0.00422
+[189/200] train: loss 0.00004, mae 0.00171 | val: loss 0.00041, mae 0.00335
 finished epoch 189
-[190/200] train: loss 0.00017, mae 0.00242 | val: loss 0.00058, mae 0.00409
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch190.pt
+[190/200] train: loss 0.00004, mae 0.00174 | val: loss 0.00042, mae 0.00341
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch190.pt
 finished epoch 190
-[191/200] train: loss 0.00017, mae 0.00241 | val: loss 0.00057, mae 0.00406
+[191/200] train: loss 0.00004, mae 0.00173 | val: loss 0.00041, mae 0.00343
 finished epoch 191
-[192/200] train: loss 0.00017, mae 0.00241 | val: loss 0.00057, mae 0.00417
+[192/200] train: loss 0.00004, mae 0.00170 | val: loss 0.00042, mae 0.00345
 finished epoch 192
-[193/200] train: loss 0.00017, mae 0.00240 | val: loss 0.00058, mae 0.00419
+[193/200] train: loss 0.00004, mae 0.00171 | val: loss 0.00042, mae 0.00339
 finished epoch 193
-[194/200] train: loss 0.00017, mae 0.00240 | val: loss 0.00057, mae 0.00417
+[194/200] train: loss 0.00004, mae 0.00170 | val: loss 0.00042, mae 0.00344
 finished epoch 194
-[195/200] train: loss 0.00017, mae 0.00239 | val: loss 0.00057, mae 0.00407
+[195/200] train: loss 0.00004, mae 0.00167 | val: loss 0.00042, mae 0.00336
 finished epoch 195
-[196/200] train: loss 0.00017, mae 0.00239 | val: loss 0.00057, mae 0.00432
+[196/200] train: loss 0.00004, mae 0.00169 | val: loss 0.00041, mae 0.00339
 finished epoch 196
-[197/200] train: loss 0.00017, mae 0.00239 | val: loss 0.00058, mae 0.00422
+[197/200] train: loss 0.00004, mae 0.00169 | val: loss 0.00041, mae 0.00338
 finished epoch 197
-[198/200] train: loss 0.00017, mae 0.00236 | val: loss 0.00058, mae 0.00421
+[198/200] train: loss 0.00004, mae 0.00168 | val: loss 0.00041, mae 0.00339
 finished epoch 198
-[199/200] train: loss 0.00017, mae 0.00237 | val: loss 0.00057, mae 0.00424
+[199/200] train: loss 0.00004, mae 0.00168 | val: loss 0.00041, mae 0.00350
 finished epoch 199
-[200/200] train: loss 0.00017, mae 0.00237 | val: loss 0.00058, mae 0.00415
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/fpn_cgm_epoch200.pt
+[200/200] train: loss 0.00004, mae 0.00168 | val: loss 0.00042, mae 0.00337
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/allgas_mom/unet_cgm_epoch200.pt
 finished epoch 200
-Done. Best val loss: 0.0005329956363507588
+Done. Best val loss: 0.0004057404931060254

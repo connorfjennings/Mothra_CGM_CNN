@@ -2,431 +2,443 @@ The following modules were not unloaded:
   (Use "module --force purge" to unload all):
 
   1) StdEnv
-Loaded 177 galaxies into RAM.
-Train galaxies: 141 | Test galaxies: 36
-Input mean: [-24.489016 -22.973673 -24.477615] std: [0.9970848 1.215704  1.0131189]
-[001/200] train: loss 1578.31476, mae 14.61157 | val: loss 1661.95205, mae 14.79330
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_best.pt
+Loaded 175 galaxies into RAM.
+Train galaxies: 140 | Test galaxies: 35
+Input mean: [-24.478472 -22.955227 -24.481607] std: [1.0029856 1.2082605 1.008786 ]
+[001/200] train: loss 1264.47288, mae 13.43562 | val: loss 1431.20078, mae 14.96959
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_best.pt
 finished epoch 1
-[002/200] train: loss 1576.30428, mae 14.45991 | val: loss 1662.23278, mae 14.85334
+[002/200] train: loss 1099.30207, mae 12.84124 | val: loss 1380.11288, mae 14.31888
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_best.pt
 finished epoch 2
-[003/200] train: loss 1575.59809, mae 14.44905 | val: loss 1662.31419, mae 14.84714
+[003/200] train: loss 1046.45157, mae 12.63369 | val: loss 1369.19283, mae 14.66816
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_best.pt
 finished epoch 3
-[004/200] train: loss 1573.75898, mae 14.52902 | val: loss 1666.44560, mae 15.29704
+[004/200] train: loss 1005.41118, mae 12.53126 | val: loss 1328.94545, mae 14.12252
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_best.pt
 finished epoch 4
-[005/200] train: loss 1569.26654, mae 14.59709 | val: loss 1663.14505, mae 15.09121
+[005/200] train: loss 967.05942, mae 12.37300 | val: loss 1323.80299, mae 14.37128
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_best.pt
 finished epoch 5
-[006/200] train: loss 1562.56210, mae 14.59848 | val: loss 1668.89523, mae 15.18739
+[006/200] train: loss 937.10153, mae 12.23719 | val: loss 1320.82801, mae 14.06042
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_best.pt
 finished epoch 6
-[007/200] train: loss 1553.96328, mae 14.66751 | val: loss 1669.47833, mae 15.25866
+[007/200] train: loss 906.51916, mae 12.08111 | val: loss 1377.93472, mae 14.73112
 finished epoch 7
-[008/200] train: loss 1541.49848, mae 14.71853 | val: loss 1674.72923, mae 15.56480
+[008/200] train: loss 883.17833, mae 11.94730 | val: loss 1320.79187, mae 14.08007
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_best.pt
 finished epoch 8
-[009/200] train: loss 1530.30949, mae 14.72637 | val: loss 1678.86979, mae 15.46471
+[009/200] train: loss 862.91464, mae 11.85565 | val: loss 1323.51829, mae 14.52118
 finished epoch 9
-[010/200] train: loss 1512.43430, mae 14.76263 | val: loss 1667.82707, mae 15.07146
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch010.pt
+[010/200] train: loss 847.31302, mae 11.75335 | val: loss 1315.38742, mae 14.24129
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_best.pt
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch010.pt
 finished epoch 10
-[011/200] train: loss 1576.65708, mae 14.28715 | val: loss 1661.60896, mae 14.62012
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_best.pt
+[011/200] train: loss 1052.09108, mae 12.70986 | val: loss 1272.86160, mae 14.15339
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_best.pt
 finished epoch 11
-[012/200] train: loss 1576.21419, mae 14.16666 | val: loss 1661.63354, mae 14.70566
+[012/200] train: loss 956.84008, mae 12.32669 | val: loss 1272.58468, mae 13.60600
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_best.pt
 finished epoch 12
-[013/200] train: loss 1576.38546, mae 14.18222 | val: loss 1661.96142, mae 14.82409
+[013/200] train: loss 914.33908, mae 12.14539 | val: loss 1259.14402, mae 14.21106
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_best.pt
 finished epoch 13
-[014/200] train: loss 1576.33299, mae 14.16431 | val: loss 1661.83136, mae 14.73972
+[014/200] train: loss 873.09811, mae 11.95825 | val: loss 1237.97782, mae 13.99231
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_best.pt
 finished epoch 14
-[015/200] train: loss 1576.03041, mae 14.17368 | val: loss 1661.66638, mae 14.67506
+[015/200] train: loss 842.17573, mae 11.77558 | val: loss 1196.76948, mae 13.49275
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_best.pt
 finished epoch 15
-[016/200] train: loss 1575.63845, mae 14.12834 | val: loss 1661.10427, mae 14.83455
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_best.pt
+[016/200] train: loss 813.14752, mae 11.61740 | val: loss 1207.98288, mae 13.75998
 finished epoch 16
-[017/200] train: loss 1575.37586, mae 14.19443 | val: loss 1660.31843, mae 14.80948
-  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_best.pt
+[017/200] train: loss 789.26371, mae 11.48520 | val: loss 1192.14010, mae 13.48824
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_best.pt
 finished epoch 17
-[018/200] train: loss nan, mae nan | val: loss 1660.55641, mae 14.65038
+[018/200] train: loss 768.11786, mae 11.34833 | val: loss 1194.09982, mae 13.84746
 finished epoch 18
-[019/200] train: loss nan, mae nan | val: loss 1661.51024, mae 14.53320
+[019/200] train: loss 750.02847, mae 11.22102 | val: loss 1199.17451, mae 13.74015
 finished epoch 19
-[020/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch020.pt
+[020/200] train: loss 733.77637, mae 11.12646 | val: loss 1179.17333, mae 13.64589
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_best.pt
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch020.pt
 finished epoch 20
-[021/200] train: loss nan, mae nan | val: loss nan, mae nan
+[021/200] train: loss 716.96451, mae 10.98232 | val: loss 1187.25916, mae 13.71074
 finished epoch 21
-[022/200] train: loss nan, mae nan | val: loss nan, mae nan
+[022/200] train: loss 702.05544, mae 10.89617 | val: loss 1190.65113, mae 13.48473
 finished epoch 22
-[023/200] train: loss nan, mae nan | val: loss nan, mae nan
+[023/200] train: loss 686.74228, mae 10.76484 | val: loss 1186.62145, mae 13.45311
 finished epoch 23
-[024/200] train: loss nan, mae nan | val: loss nan, mae nan
+[024/200] train: loss 677.18627, mae 10.68983 | val: loss 1172.89359, mae 13.39710
+  ✓ saved best → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_best.pt
 finished epoch 24
-[025/200] train: loss nan, mae nan | val: loss nan, mae nan
+[025/200] train: loss 662.97157, mae 10.57667 | val: loss 1184.67662, mae 13.73191
 finished epoch 25
-[026/200] train: loss nan, mae nan | val: loss nan, mae nan
+[026/200] train: loss 651.93297, mae 10.48292 | val: loss 1176.67742, mae 13.57580
 finished epoch 26
-[027/200] train: loss nan, mae nan | val: loss nan, mae nan
+[027/200] train: loss 643.82929, mae 10.41332 | val: loss 1179.47851, mae 13.58187
 finished epoch 27
-[028/200] train: loss nan, mae nan | val: loss nan, mae nan
+[028/200] train: loss 631.74835, mae 10.30456 | val: loss 1180.55277, mae 13.60958
 finished epoch 28
-[029/200] train: loss nan, mae nan | val: loss nan, mae nan
+[029/200] train: loss 623.80923, mae 10.23520 | val: loss 1184.63258, mae 13.72773
 finished epoch 29
-[030/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch030.pt
+[030/200] train: loss 615.69346, mae 10.14136 | val: loss 1180.47832, mae 13.62879
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch030.pt
 finished epoch 30
-[031/200] train: loss nan, mae nan | val: loss nan, mae nan
+[031/200] train: loss 605.80541, mae 10.04553 | val: loss 1178.26652, mae 13.59252
 finished epoch 31
-[032/200] train: loss nan, mae nan | val: loss nan, mae nan
+[032/200] train: loss 594.72767, mae 9.93221 | val: loss 1178.41605, mae 13.64211
 finished epoch 32
-[033/200] train: loss nan, mae nan | val: loss nan, mae nan
+[033/200] train: loss 586.63492, mae 9.84237 | val: loss 1182.36532, mae 13.39787
 finished epoch 33
-[034/200] train: loss nan, mae nan | val: loss nan, mae nan
+[034/200] train: loss 580.47323, mae 9.76239 | val: loss 1181.54885, mae 13.41713
 finished epoch 34
-[035/200] train: loss nan, mae nan | val: loss nan, mae nan
+[035/200] train: loss 571.79850, mae 9.67178 | val: loss 1188.49549, mae 13.64758
 finished epoch 35
-[036/200] train: loss nan, mae nan | val: loss nan, mae nan
+[036/200] train: loss 565.60423, mae 9.60172 | val: loss 1180.76152, mae 13.64757
 finished epoch 36
-[037/200] train: loss nan, mae nan | val: loss nan, mae nan
+[037/200] train: loss 556.86295, mae 9.50149 | val: loss 1191.82032, mae 13.50127
 finished epoch 37
-[038/200] train: loss nan, mae nan | val: loss nan, mae nan
+[038/200] train: loss 549.48971, mae 9.41467 | val: loss 1191.98380, mae 13.16647
 finished epoch 38
-[039/200] train: loss nan, mae nan | val: loss nan, mae nan
+[039/200] train: loss 543.44854, mae 9.33519 | val: loss 1185.22485, mae 13.39521
 finished epoch 39
-[040/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch040.pt
+[040/200] train: loss 537.49609, mae 9.26865 | val: loss 1185.44707, mae 13.59726
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch040.pt
 finished epoch 40
-[041/200] train: loss nan, mae nan | val: loss nan, mae nan
+[041/200] train: loss 530.08656, mae 9.17614 | val: loss 1192.33824, mae 13.70662
 finished epoch 41
-[042/200] train: loss nan, mae nan | val: loss nan, mae nan
+[042/200] train: loss 524.92264, mae 9.11751 | val: loss 1190.64371, mae 13.52117
 finished epoch 42
-[043/200] train: loss nan, mae nan | val: loss nan, mae nan
+[043/200] train: loss 519.61481, mae 9.05008 | val: loss 1186.31962, mae 13.53018
 finished epoch 43
-[044/200] train: loss nan, mae nan | val: loss nan, mae nan
+[044/200] train: loss 514.00639, mae 8.97653 | val: loss 1187.40091, mae 13.38690
 finished epoch 44
-[045/200] train: loss nan, mae nan | val: loss nan, mae nan
+[045/200] train: loss 509.06056, mae 8.91551 | val: loss 1194.44077, mae 13.56226
 finished epoch 45
-[046/200] train: loss nan, mae nan | val: loss nan, mae nan
+[046/200] train: loss 503.34778, mae 8.84677 | val: loss 1188.83573, mae 13.25380
 finished epoch 46
-[047/200] train: loss nan, mae nan | val: loss nan, mae nan
+[047/200] train: loss 498.62006, mae 8.79018 | val: loss 1191.73979, mae 13.37720
 finished epoch 47
-[048/200] train: loss nan, mae nan | val: loss nan, mae nan
+[048/200] train: loss 494.60563, mae 8.73487 | val: loss 1188.49766, mae 13.34086
 finished epoch 48
-[049/200] train: loss nan, mae nan | val: loss nan, mae nan
+[049/200] train: loss 489.45717, mae 8.67201 | val: loss 1192.77521, mae 13.35679
 finished epoch 49
-[050/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch050.pt
+[050/200] train: loss 485.62249, mae 8.62081 | val: loss 1192.47450, mae 13.35222
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch050.pt
 finished epoch 50
-[051/200] train: loss nan, mae nan | val: loss nan, mae nan
+[051/200] train: loss 482.03683, mae 8.57432 | val: loss 1200.31705, mae 13.44449
 finished epoch 51
-[052/200] train: loss nan, mae nan | val: loss nan, mae nan
+[052/200] train: loss 478.23162, mae 8.53619 | val: loss 1198.47920, mae 13.40544
 finished epoch 52
-[053/200] train: loss nan, mae nan | val: loss nan, mae nan
+[053/200] train: loss 473.28861, mae 8.46538 | val: loss 1192.46881, mae 13.21638
 finished epoch 53
-[054/200] train: loss nan, mae nan | val: loss nan, mae nan
+[054/200] train: loss 469.14940, mae 8.41188 | val: loss 1194.00003, mae 13.24179
 finished epoch 54
-[055/200] train: loss nan, mae nan | val: loss nan, mae nan
+[055/200] train: loss 466.03374, mae 8.37239 | val: loss 1197.09723, mae 13.29268
 finished epoch 55
-[056/200] train: loss nan, mae nan | val: loss nan, mae nan
+[056/200] train: loss 462.80829, mae 8.33056 | val: loss 1200.43661, mae 13.26632
 finished epoch 56
-[057/200] train: loss nan, mae nan | val: loss nan, mae nan
+[057/200] train: loss 459.22346, mae 8.28752 | val: loss 1196.46024, mae 13.35001
 finished epoch 57
-[058/200] train: loss nan, mae nan | val: loss nan, mae nan
+[058/200] train: loss 456.52208, mae 8.25470 | val: loss 1198.77769, mae 13.34158
 finished epoch 58
-[059/200] train: loss nan, mae nan | val: loss nan, mae nan
+[059/200] train: loss 452.72176, mae 8.20112 | val: loss 1200.94578, mae 13.42389
 finished epoch 59
-[060/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch060.pt
+[060/200] train: loss 449.57651, mae 8.16332 | val: loss 1201.28322, mae 13.34473
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch060.pt
 finished epoch 60
-[061/200] train: loss nan, mae nan | val: loss nan, mae nan
+[061/200] train: loss 446.41885, mae 8.12711 | val: loss 1202.49559, mae 13.28889
 finished epoch 61
-[062/200] train: loss nan, mae nan | val: loss nan, mae nan
+[062/200] train: loss 443.06877, mae 8.08216 | val: loss 1205.18609, mae 13.36722
 finished epoch 62
-[063/200] train: loss nan, mae nan | val: loss nan, mae nan
+[063/200] train: loss 440.12597, mae 8.03947 | val: loss 1202.01502, mae 13.31986
 finished epoch 63
-[064/200] train: loss nan, mae nan | val: loss nan, mae nan
+[064/200] train: loss 437.91640, mae 8.01731 | val: loss 1206.52101, mae 13.29142
 finished epoch 64
-[065/200] train: loss nan, mae nan | val: loss nan, mae nan
+[065/200] train: loss 435.97387, mae 7.98694 | val: loss 1203.47986, mae 13.26162
 finished epoch 65
-[066/200] train: loss nan, mae nan | val: loss nan, mae nan
+[066/200] train: loss 431.51395, mae 7.92888 | val: loss 1201.63375, mae 13.46617
 finished epoch 66
-[067/200] train: loss nan, mae nan | val: loss nan, mae nan
+[067/200] train: loss 429.80494, mae 7.90681 | val: loss 1203.68962, mae 13.38997
 finished epoch 67
-[068/200] train: loss nan, mae nan | val: loss nan, mae nan
+[068/200] train: loss 427.81856, mae 7.88102 | val: loss 1199.46837, mae 13.29563
 finished epoch 68
-[069/200] train: loss nan, mae nan | val: loss nan, mae nan
+[069/200] train: loss 425.10661, mae 7.84066 | val: loss 1205.14061, mae 13.32819
 finished epoch 69
-[070/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch070.pt
+[070/200] train: loss 422.48258, mae 7.81307 | val: loss 1207.02619, mae 13.32757
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch070.pt
 finished epoch 70
-[071/200] train: loss nan, mae nan | val: loss nan, mae nan
+[071/200] train: loss 419.52920, mae 7.77381 | val: loss 1208.62246, mae 13.45395
 finished epoch 71
-[072/200] train: loss nan, mae nan | val: loss nan, mae nan
+[072/200] train: loss 417.40419, mae 7.74351 | val: loss 1205.44557, mae 13.16553
 finished epoch 72
-[073/200] train: loss nan, mae nan | val: loss nan, mae nan
+[073/200] train: loss 415.73428, mae 7.72160 | val: loss 1212.61635, mae 13.56013
 finished epoch 73
-[074/200] train: loss nan, mae nan | val: loss nan, mae nan
+[074/200] train: loss 413.62831, mae 7.69373 | val: loss 1210.49934, mae 13.35607
 finished epoch 74
-[075/200] train: loss nan, mae nan | val: loss nan, mae nan
+[075/200] train: loss 411.43945, mae 7.66725 | val: loss 1204.92182, mae 13.30596
 finished epoch 75
-[076/200] train: loss nan, mae nan | val: loss nan, mae nan
+[076/200] train: loss 409.44103, mae 7.63894 | val: loss 1206.35951, mae 13.37585
 finished epoch 76
-[077/200] train: loss nan, mae nan | val: loss nan, mae nan
+[077/200] train: loss 407.62970, mae 7.61629 | val: loss 1212.04946, mae 13.39951
 finished epoch 77
-[078/200] train: loss nan, mae nan | val: loss nan, mae nan
+[078/200] train: loss 405.41717, mae 7.58824 | val: loss 1210.62722, mae 13.37275
 finished epoch 78
-[079/200] train: loss nan, mae nan | val: loss nan, mae nan
+[079/200] train: loss 403.10024, mae 7.55380 | val: loss 1208.78162, mae 13.28335
 finished epoch 79
-[080/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch080.pt
+[080/200] train: loss 401.36193, mae 7.53396 | val: loss 1209.78187, mae 13.35170
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch080.pt
 finished epoch 80
-[081/200] train: loss nan, mae nan | val: loss nan, mae nan
+[081/200] train: loss 399.80770, mae 7.51454 | val: loss 1207.71709, mae 13.33960
 finished epoch 81
-[082/200] train: loss nan, mae nan | val: loss nan, mae nan
+[082/200] train: loss 397.21218, mae 7.48093 | val: loss 1208.72977, mae 13.29549
 finished epoch 82
-[083/200] train: loss nan, mae nan | val: loss nan, mae nan
+[083/200] train: loss 396.00367, mae 7.46287 | val: loss 1209.79622, mae 13.17677
 finished epoch 83
-[084/200] train: loss nan, mae nan | val: loss nan, mae nan
+[084/200] train: loss 394.54814, mae 7.44486 | val: loss 1213.37169, mae 13.31405
 finished epoch 84
-[085/200] train: loss nan, mae nan | val: loss nan, mae nan
+[085/200] train: loss 392.24202, mae 7.41389 | val: loss 1217.87349, mae 13.49762
 finished epoch 85
-[086/200] train: loss nan, mae nan | val: loss nan, mae nan
+[086/200] train: loss 390.17866, mae 7.38640 | val: loss 1215.57191, mae 13.54957
 finished epoch 86
-[087/200] train: loss nan, mae nan | val: loss nan, mae nan
+[087/200] train: loss 388.58925, mae 7.36398 | val: loss 1209.53831, mae 13.28709
 finished epoch 87
-[088/200] train: loss nan, mae nan | val: loss nan, mae nan
+[088/200] train: loss 386.67930, mae 7.33786 | val: loss 1216.43234, mae 13.32416
 finished epoch 88
-[089/200] train: loss nan, mae nan | val: loss nan, mae nan
+[089/200] train: loss 385.35908, mae 7.31880 | val: loss 1218.72078, mae 13.33060
 finished epoch 89
-[090/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch090.pt
+[090/200] train: loss 384.07922, mae 7.30360 | val: loss 1219.32561, mae 13.49826
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch090.pt
 finished epoch 90
-[091/200] train: loss nan, mae nan | val: loss nan, mae nan
+[091/200] train: loss 382.52785, mae 7.28316 | val: loss 1218.37240, mae 13.42271
 finished epoch 91
-[092/200] train: loss nan, mae nan | val: loss nan, mae nan
+[092/200] train: loss 380.89717, mae 7.26106 | val: loss 1220.04623, mae 13.36416
 finished epoch 92
-[093/200] train: loss nan, mae nan | val: loss nan, mae nan
+[093/200] train: loss 379.43004, mae 7.24077 | val: loss 1219.72427, mae 13.42062
 finished epoch 93
-[094/200] train: loss nan, mae nan | val: loss nan, mae nan
+[094/200] train: loss 377.50995, mae 7.21411 | val: loss 1215.57734, mae 13.28706
 finished epoch 94
-[095/200] train: loss nan, mae nan | val: loss nan, mae nan
+[095/200] train: loss 377.93717, mae 7.22347 | val: loss 1214.26030, mae 13.24470
 finished epoch 95
-[096/200] train: loss nan, mae nan | val: loss nan, mae nan
+[096/200] train: loss 375.25777, mae 7.18543 | val: loss 1213.92811, mae 13.45018
 finished epoch 96
-[097/200] train: loss nan, mae nan | val: loss nan, mae nan
+[097/200] train: loss 373.25927, mae 7.15879 | val: loss 1221.47999, mae 13.37899
 finished epoch 97
-[098/200] train: loss nan, mae nan | val: loss nan, mae nan
+[098/200] train: loss 372.11768, mae 7.14550 | val: loss 1221.00288, mae 13.31632
 finished epoch 98
-[099/200] train: loss nan, mae nan | val: loss nan, mae nan
+[099/200] train: loss 370.77046, mae 7.12385 | val: loss 1222.97457, mae 13.62406
 finished epoch 99
-[100/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch100.pt
+[100/200] train: loss 370.00886, mae 7.11132 | val: loss 1216.39626, mae 13.27846
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch100.pt
 finished epoch 100
-[101/200] train: loss nan, mae nan | val: loss nan, mae nan
+[101/200] train: loss 368.84194, mae 7.09830 | val: loss 1222.35920, mae 13.52403
 finished epoch 101
-[102/200] train: loss nan, mae nan | val: loss nan, mae nan
+[102/200] train: loss 367.40657, mae 7.08303 | val: loss 1220.97860, mae 13.35879
 finished epoch 102
-[103/200] train: loss nan, mae nan | val: loss nan, mae nan
+[103/200] train: loss 366.02524, mae 7.06146 | val: loss 1220.80089, mae 13.28380
 finished epoch 103
-[104/200] train: loss nan, mae nan | val: loss nan, mae nan
+[104/200] train: loss 364.57318, mae 7.03966 | val: loss 1224.58347, mae 13.31985
 finished epoch 104
-[105/200] train: loss nan, mae nan | val: loss nan, mae nan
+[105/200] train: loss 363.67655, mae 7.02906 | val: loss 1220.17109, mae 13.27224
 finished epoch 105
-[106/200] train: loss nan, mae nan | val: loss nan, mae nan
+[106/200] train: loss 362.59314, mae 7.01299 | val: loss 1224.42612, mae 13.47148
 finished epoch 106
-[107/200] train: loss nan, mae nan | val: loss nan, mae nan
+[107/200] train: loss 361.16231, mae 6.99526 | val: loss 1226.50131, mae 13.30854
 finished epoch 107
-[108/200] train: loss nan, mae nan | val: loss nan, mae nan
+[108/200] train: loss 360.40425, mae 6.98527 | val: loss 1222.18614, mae 13.32356
 finished epoch 108
-[109/200] train: loss nan, mae nan | val: loss nan, mae nan
+[109/200] train: loss 358.61414, mae 6.96058 | val: loss 1227.02140, mae 13.47217
 finished epoch 109
-[110/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch110.pt
+[110/200] train: loss 357.62861, mae 6.94518 | val: loss 1223.86874, mae 13.35515
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch110.pt
 finished epoch 110
-[111/200] train: loss nan, mae nan | val: loss nan, mae nan
+[111/200] train: loss 356.62634, mae 6.93362 | val: loss 1226.54457, mae 13.39298
 finished epoch 111
-[112/200] train: loss nan, mae nan | val: loss nan, mae nan
+[112/200] train: loss 355.57522, mae 6.91915 | val: loss 1230.13217, mae 13.43170
 finished epoch 112
-[113/200] train: loss nan, mae nan | val: loss nan, mae nan
+[113/200] train: loss 354.24371, mae 6.89997 | val: loss 1223.50706, mae 13.35899
 finished epoch 113
-[114/200] train: loss nan, mae nan | val: loss nan, mae nan
+[114/200] train: loss 353.86812, mae 6.89245 | val: loss 1224.48331, mae 13.31717
 finished epoch 114
-[115/200] train: loss nan, mae nan | val: loss nan, mae nan
+[115/200] train: loss 352.10410, mae 6.86902 | val: loss 1224.77654, mae 13.29814
 finished epoch 115
-[116/200] train: loss nan, mae nan | val: loss nan, mae nan
+[116/200] train: loss 351.15019, mae 6.85586 | val: loss 1225.93488, mae 13.34357
 finished epoch 116
-[117/200] train: loss nan, mae nan | val: loss nan, mae nan
+[117/200] train: loss 349.60396, mae 6.83511 | val: loss 1225.78924, mae 13.28144
 finished epoch 117
-[118/200] train: loss nan, mae nan | val: loss nan, mae nan
+[118/200] train: loss 348.76536, mae 6.82407 | val: loss 1226.37777, mae 13.31465
 finished epoch 118
-[119/200] train: loss nan, mae nan | val: loss nan, mae nan
+[119/200] train: loss 347.91702, mae 6.81200 | val: loss 1228.91199, mae 13.42043
 finished epoch 119
-[120/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch120.pt
+[120/200] train: loss 347.66457, mae 6.81017 | val: loss 1229.02738, mae 13.41484
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch120.pt
 finished epoch 120
-[121/200] train: loss nan, mae nan | val: loss nan, mae nan
+[121/200] train: loss 346.35357, mae 6.79053 | val: loss 1229.53596, mae 13.46617
 finished epoch 121
-[122/200] train: loss nan, mae nan | val: loss nan, mae nan
+[122/200] train: loss 345.31436, mae 6.77526 | val: loss 1230.28414, mae 13.49415
 finished epoch 122
-[123/200] train: loss nan, mae nan | val: loss nan, mae nan
+[123/200] train: loss 344.62912, mae 6.76866 | val: loss 1233.21797, mae 13.29863
 finished epoch 123
-[124/200] train: loss nan, mae nan | val: loss nan, mae nan
+[124/200] train: loss 342.96572, mae 6.74212 | val: loss 1235.01412, mae 13.41850
 finished epoch 124
-[125/200] train: loss nan, mae nan | val: loss nan, mae nan
+[125/200] train: loss 342.58137, mae 6.73871 | val: loss 1232.69846, mae 13.44966
 finished epoch 125
-[126/200] train: loss nan, mae nan | val: loss nan, mae nan
+[126/200] train: loss 342.40283, mae 6.73752 | val: loss 1230.92944, mae 13.28759
 finished epoch 126
-[127/200] train: loss nan, mae nan | val: loss nan, mae nan
+[127/200] train: loss 341.17620, mae 6.71962 | val: loss 1235.09424, mae 13.45432
 finished epoch 127
-[128/200] train: loss nan, mae nan | val: loss nan, mae nan
+[128/200] train: loss 339.31904, mae 6.69242 | val: loss 1234.37319, mae 13.36276
 finished epoch 128
-[129/200] train: loss nan, mae nan | val: loss nan, mae nan
+[129/200] train: loss 338.69487, mae 6.68473 | val: loss 1232.81660, mae 13.30116
 finished epoch 129
-[130/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch130.pt
+[130/200] train: loss 337.95619, mae 6.67493 | val: loss 1242.12570, mae 13.52264
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch130.pt
 finished epoch 130
-[131/200] train: loss nan, mae nan | val: loss nan, mae nan
+[131/200] train: loss 337.12304, mae 6.66154 | val: loss 1229.33978, mae 13.26943
 finished epoch 131
-[132/200] train: loss nan, mae nan | val: loss nan, mae nan
+[132/200] train: loss 336.78662, mae 6.65835 | val: loss 1235.34927, mae 13.36588
 finished epoch 132
-[133/200] train: loss nan, mae nan | val: loss nan, mae nan
+[133/200] train: loss 336.07483, mae 6.65059 | val: loss 1231.31960, mae 13.40965
 finished epoch 133
-[134/200] train: loss nan, mae nan | val: loss nan, mae nan
+[134/200] train: loss 334.92493, mae 6.63439 | val: loss 1235.05024, mae 13.39776
 finished epoch 134
-[135/200] train: loss nan, mae nan | val: loss nan, mae nan
+[135/200] train: loss 333.77683, mae 6.61704 | val: loss 1232.04153, mae 13.38619
 finished epoch 135
-[136/200] train: loss nan, mae nan | val: loss nan, mae nan
+[136/200] train: loss 333.29341, mae 6.61085 | val: loss 1235.80519, mae 13.37060
 finished epoch 136
-[137/200] train: loss nan, mae nan | val: loss nan, mae nan
+[137/200] train: loss 332.02285, mae 6.59575 | val: loss 1232.23820, mae 13.36000
 finished epoch 137
-[138/200] train: loss nan, mae nan | val: loss nan, mae nan
+[138/200] train: loss 331.35650, mae 6.58515 | val: loss 1239.36865, mae 13.30553
 finished epoch 138
-[139/200] train: loss nan, mae nan | val: loss nan, mae nan
+[139/200] train: loss 330.72318, mae 6.57459 | val: loss 1234.57966, mae 13.33710
 finished epoch 139
-[140/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch140.pt
+[140/200] train: loss 330.27711, mae 6.56775 | val: loss 1237.37410, mae 13.43356
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch140.pt
 finished epoch 140
-[141/200] train: loss nan, mae nan | val: loss nan, mae nan
+[141/200] train: loss 328.86091, mae 6.54991 | val: loss 1235.35835, mae 13.32200
 finished epoch 141
-[142/200] train: loss nan, mae nan | val: loss nan, mae nan
+[142/200] train: loss 328.20839, mae 6.54035 | val: loss 1234.64554, mae 13.35330
 finished epoch 142
-[143/200] train: loss nan, mae nan | val: loss nan, mae nan
+[143/200] train: loss 327.57616, mae 6.53166 | val: loss 1239.77587, mae 13.37342
 finished epoch 143
-[144/200] train: loss nan, mae nan | val: loss nan, mae nan
+[144/200] train: loss 326.93824, mae 6.52426 | val: loss 1235.35167, mae 13.30021
 finished epoch 144
-[145/200] train: loss nan, mae nan | val: loss nan, mae nan
+[145/200] train: loss 326.07040, mae 6.51140 | val: loss 1238.98607, mae 13.39224
 finished epoch 145
-[146/200] train: loss nan, mae nan | val: loss nan, mae nan
+[146/200] train: loss 325.46773, mae 6.50101 | val: loss 1238.09410, mae 13.38527
 finished epoch 146
-[147/200] train: loss nan, mae nan | val: loss nan, mae nan
+[147/200] train: loss 324.57157, mae 6.49001 | val: loss 1240.82963, mae 13.39859
 finished epoch 147
-[148/200] train: loss nan, mae nan | val: loss nan, mae nan
+[148/200] train: loss 324.16849, mae 6.48487 | val: loss 1239.50936, mae 13.44587
 finished epoch 148
-[149/200] train: loss nan, mae nan | val: loss nan, mae nan
+[149/200] train: loss 323.74077, mae 6.47774 | val: loss 1238.40894, mae 13.45410
 finished epoch 149
-[150/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch150.pt
+[150/200] train: loss 322.95931, mae 6.46962 | val: loss 1239.43605, mae 13.38762
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch150.pt
 finished epoch 150
-[151/200] train: loss nan, mae nan | val: loss nan, mae nan
+[151/200] train: loss 321.80966, mae 6.45009 | val: loss 1239.51333, mae 13.35872
 finished epoch 151
-[152/200] train: loss nan, mae nan | val: loss nan, mae nan
+[152/200] train: loss 321.12123, mae 6.43979 | val: loss 1238.29656, mae 13.35395
 finished epoch 152
-[153/200] train: loss nan, mae nan | val: loss nan, mae nan
+[153/200] train: loss 321.00943, mae 6.44145 | val: loss 1238.27216, mae 13.34781
 finished epoch 153
-[154/200] train: loss nan, mae nan | val: loss nan, mae nan
+[154/200] train: loss 320.70135, mae 6.43559 | val: loss 1242.06851, mae 13.41577
 finished epoch 154
-[155/200] train: loss nan, mae nan | val: loss nan, mae nan
+[155/200] train: loss 319.38328, mae 6.41735 | val: loss 1240.36723, mae 13.36928
 finished epoch 155
-[156/200] train: loss nan, mae nan | val: loss nan, mae nan
+[156/200] train: loss 318.87632, mae 6.41014 | val: loss 1245.53798, mae 13.38336
 finished epoch 156
-[157/200] train: loss nan, mae nan | val: loss nan, mae nan
+[157/200] train: loss 318.28213, mae 6.40279 | val: loss 1239.91641, mae 13.41098
 finished epoch 157
-[158/200] train: loss nan, mae nan | val: loss nan, mae nan
+[158/200] train: loss 317.21343, mae 6.38531 | val: loss 1237.40606, mae 13.32192
 finished epoch 158
-[159/200] train: loss nan, mae nan | val: loss nan, mae nan
+[159/200] train: loss 317.22417, mae 6.38666 | val: loss 1239.46926, mae 13.27519
 finished epoch 159
-[160/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch160.pt
+[160/200] train: loss 316.41642, mae 6.37586 | val: loss 1244.63783, mae 13.28438
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch160.pt
 finished epoch 160
-[161/200] train: loss nan, mae nan | val: loss nan, mae nan
+[161/200] train: loss 315.56977, mae 6.36416 | val: loss 1242.23041, mae 13.37698
 finished epoch 161
-[162/200] train: loss nan, mae nan | val: loss nan, mae nan
+[162/200] train: loss 314.83706, mae 6.35304 | val: loss 1239.53721, mae 13.37599
 finished epoch 162
-[163/200] train: loss nan, mae nan | val: loss nan, mae nan
+[163/200] train: loss 314.63816, mae 6.35278 | val: loss 1240.69892, mae 13.41385
 finished epoch 163
-[164/200] train: loss nan, mae nan | val: loss nan, mae nan
+[164/200] train: loss 313.91697, mae 6.34286 | val: loss 1242.27334, mae 13.34683
 finished epoch 164
-[165/200] train: loss nan, mae nan | val: loss nan, mae nan
+[165/200] train: loss 313.18329, mae 6.33160 | val: loss 1243.16245, mae 13.42429
 finished epoch 165
-[166/200] train: loss nan, mae nan | val: loss nan, mae nan
+[166/200] train: loss 312.27844, mae 6.31731 | val: loss 1244.72551, mae 13.39736
 finished epoch 166
-[167/200] train: loss nan, mae nan | val: loss nan, mae nan
+[167/200] train: loss 312.32979, mae 6.31912 | val: loss 1245.36244, mae 13.35045
 finished epoch 167
-[168/200] train: loss nan, mae nan | val: loss nan, mae nan
+[168/200] train: loss 311.91456, mae 6.31259 | val: loss 1240.14657, mae 13.38729
 finished epoch 168
-[169/200] train: loss nan, mae nan | val: loss nan, mae nan
+[169/200] train: loss 311.27867, mae 6.30458 | val: loss 1250.84138, mae 13.48627
 finished epoch 169
-[170/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch170.pt
+[170/200] train: loss 310.31871, mae 6.28946 | val: loss 1248.88955, mae 13.44940
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch170.pt
 finished epoch 170
-[171/200] train: loss nan, mae nan | val: loss nan, mae nan
+[171/200] train: loss 309.76422, mae 6.28160 | val: loss 1245.89555, mae 13.38345
 finished epoch 171
-[172/200] train: loss nan, mae nan | val: loss nan, mae nan
+[172/200] train: loss 309.93213, mae 6.28845 | val: loss 1248.61421, mae 13.40342
 finished epoch 172
-[173/200] train: loss nan, mae nan | val: loss nan, mae nan
+[173/200] train: loss 309.13053, mae 6.27361 | val: loss 1252.29803, mae 13.43558
 finished epoch 173
-[174/200] train: loss nan, mae nan | val: loss nan, mae nan
+[174/200] train: loss 308.30187, mae 6.26302 | val: loss 1245.16248, mae 13.33831
 finished epoch 174
-[175/200] train: loss nan, mae nan | val: loss nan, mae nan
+[175/200] train: loss 308.29252, mae 6.26389 | val: loss 1248.66108, mae 13.45752
 finished epoch 175
-[176/200] train: loss nan, mae nan | val: loss nan, mae nan
+[176/200] train: loss 307.38480, mae 6.25015 | val: loss 1245.97084, mae 13.40937
 finished epoch 176
-[177/200] train: loss nan, mae nan | val: loss nan, mae nan
+[177/200] train: loss 306.83444, mae 6.24134 | val: loss 1250.80218, mae 13.37469
 finished epoch 177
-[178/200] train: loss nan, mae nan | val: loss nan, mae nan
+[178/200] train: loss 306.98114, mae 6.24560 | val: loss 1245.80465, mae 13.47032
 finished epoch 178
-[179/200] train: loss nan, mae nan | val: loss nan, mae nan
+[179/200] train: loss 305.63337, mae 6.22652 | val: loss 1248.07211, mae 13.42344
 finished epoch 179
-[180/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch180.pt
+[180/200] train: loss 305.14044, mae 6.22083 | val: loss 1247.09446, mae 13.35939
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch180.pt
 finished epoch 180
-[181/200] train: loss nan, mae nan | val: loss nan, mae nan
+[181/200] train: loss 304.69641, mae 6.21289 | val: loss 1247.89229, mae 13.35629
 finished epoch 181
-[182/200] train: loss nan, mae nan | val: loss nan, mae nan
+[182/200] train: loss 304.74260, mae 6.21322 | val: loss 1249.78813, mae 13.43636
 finished epoch 182
-[183/200] train: loss nan, mae nan | val: loss nan, mae nan
+[183/200] train: loss 303.66413, mae 6.19977 | val: loss 1249.49209, mae 13.42167
 finished epoch 183
-[184/200] train: loss nan, mae nan | val: loss nan, mae nan
+[184/200] train: loss 303.50825, mae 6.19448 | val: loss 1250.79319, mae 13.39979
 finished epoch 184
-[185/200] train: loss nan, mae nan | val: loss nan, mae nan
+[185/200] train: loss 303.02009, mae 6.18821 | val: loss 1250.83624, mae 13.44899
 finished epoch 185
-[186/200] train: loss nan, mae nan | val: loss nan, mae nan
+[186/200] train: loss 302.23040, mae 6.17823 | val: loss 1248.31347, mae 13.33059
 finished epoch 186
-[187/200] train: loss nan, mae nan | val: loss nan, mae nan
+[187/200] train: loss 302.21200, mae 6.17630 | val: loss 1253.06727, mae 13.45624
 finished epoch 187
-[188/200] train: loss nan, mae nan | val: loss nan, mae nan
+[188/200] train: loss 301.46753, mae 6.16769 | val: loss 1249.87205, mae 13.36092
 finished epoch 188
-[189/200] train: loss nan, mae nan | val: loss nan, mae nan
+[189/200] train: loss 301.21506, mae 6.16283 | val: loss 1252.63031, mae 13.38359
 finished epoch 189
-[190/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch190.pt
+[190/200] train: loss 300.37931, mae 6.15061 | val: loss 1252.01502, mae 13.46829
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch190.pt
 finished epoch 190
-[191/200] train: loss nan, mae nan | val: loss nan, mae nan
+[191/200] train: loss 300.04389, mae 6.14720 | val: loss 1251.11280, mae 13.40831
 finished epoch 191
-[192/200] train: loss nan, mae nan | val: loss nan, mae nan
+[192/200] train: loss 299.86659, mae 6.14467 | val: loss 1256.57127, mae 13.49507
 finished epoch 192
-[193/200] train: loss nan, mae nan | val: loss nan, mae nan
+[193/200] train: loss 299.04596, mae 6.13324 | val: loss 1258.31947, mae 13.54602
 finished epoch 193
-[194/200] train: loss nan, mae nan | val: loss nan, mae nan
+[194/200] train: loss 298.36756, mae 6.12105 | val: loss 1250.08388, mae 13.36646
 finished epoch 194
-[195/200] train: loss nan, mae nan | val: loss nan, mae nan
+[195/200] train: loss 298.58706, mae 6.12752 | val: loss 1250.87038, mae 13.42911
 finished epoch 195
-[196/200] train: loss nan, mae nan | val: loss nan, mae nan
+[196/200] train: loss 298.26950, mae 6.12344 | val: loss 1249.33171, mae 13.36844
 finished epoch 196
-[197/200] train: loss nan, mae nan | val: loss nan, mae nan
+[197/200] train: loss 297.22607, mae 6.10699 | val: loss 1247.85063, mae 13.42975
 finished epoch 197
-[198/200] train: loss nan, mae nan | val: loss nan, mae nan
+[198/200] train: loss 296.66813, mae 6.09725 | val: loss 1255.40393, mae 13.42072
 finished epoch 198
-[199/200] train: loss nan, mae nan | val: loss nan, mae nan
+[199/200] train: loss 296.83526, mae 6.10269 | val: loss 1252.23257, mae 13.41081
 finished epoch 199
-[200/200] train: loss nan, mae nan | val: loss nan, mae nan
-  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/fpn_cgm_epoch200.pt
+[200/200] train: loss 296.00870, mae 6.09088 | val: loss 1247.19247, mae 13.39326
+  • saved periodic → /home/cj535/palmer_scratch/CNN_checkpoints/coldgas_vel/unet_cgm_epoch200.pt
 finished epoch 200
-Done. Best val loss: 1660.3184273719787
+Done. Best val loss: 1172.8935930524553
