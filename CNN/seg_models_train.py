@@ -6,22 +6,29 @@ import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 from sklearn.model_selection import GroupShuffleSplit
 import segmentation_models_pytorch as smp
+from architecture import UNetBasic, UNetDropout
 
 # ---------------- config ----------------
 DATA_DIR   =  "/home/cj535/palmer_scratch/TNG50_cutouts/MW_sample_maps/" + sys.argv[1]  # folder with your .npy packs
 PATTERN    = "TNG50_snap099_subid*_views10_aug8_C5_256x256.npy"
 CHECKPOINTS_DIR = "/home/cj535/palmer_scratch/CNN_checkpoints/" + sys.argv[2]
+CHECKPOINTS_NAME = "UNetDropout"
 H, W = 256, 256
+IN_CHANNELS = 4
+TARGET_C = 2                # u,v
+OUT_CHANNELS = 2 * TARGET_C # 4, for aleotoric errors
 R_MASK = 20                     # pixels
-BATCH_SIZE = 16
+BATCH_SIZE = 32
 EPOCHS = 200
 FREEZE_ENCODER_EPOCHS = 10
 LR = 1e-3
 NUM_WORKERS = 4
 SEED = 42
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-VEL_BINS = [(-300, -100), (-100, 100), (100, 300)]  # 3 input channels
+#VEL_BINS = [(-300, -100), (-100, 100), (100, 300)]  # 3 input channels
 COMPRESSION = 'log10'
+
+MODEL = UNetDropout(in_channels=IN_CHANNELS,out_channels=OUT_CHANNELS,p=0.2)
 
 random.seed(SEED); np.random.seed(SEED); torch.manual_seed(SEED)
 
@@ -52,12 +59,51 @@ def masked_mse(pred, target, mask, eps=1e-8):
         return diff2.new_zeros(())
     return (diff2 * mask).sum() / (wsum * pred.shape[1])  # average over valid pixels & channels
 
+def masked_gaussian_nll(pred, target, mask, eps=1e-8, clamp_logvar=(-10.0, 10.0)):
+    """
+    Heteroscedastic masked Gaussian NLL.
+    pred:   (B, 2C, H, W) if predicting mean and logvar per channel (here C=2 for u,v).
+            First C channels = mean; next C channels = log(variance) per pixel.
+            If pred has only C channels, falls back to masked MSE.
+    target: (B, C, H, W)
+    mask:   (B, 1, H, W) with 1 where valid, 0 where ignored.
+    """
+    B, C, H, W = target.shape
+    mask = mask.to(dtype=target.dtype)                  # (B,1,H,W)
+    valid = mask.sum()                                  # scalar
+
+    if valid < eps:
+        return target.new_zeros(())
+
+    if pred.shape[1] == C:
+        # plain masked MSE
+        diff2 = (pred - target) ** 2
+        return (diff2 * mask).sum() / (valid * C)
+
+    elif pred.shape[1] == 2 * C:
+        mu        = pred[:, :C]                         # (B,C,H,W)
+        logvar    = pred[:, C:]                         # (B,C,H,W)
+        # clamp log-variance for stability
+        logvar    = torch.clamp(logvar, *clamp_logvar)
+        inv_var   = torch.exp(-logvar)
+
+        diff2     = (mu - target) ** 2
+        # per-pixel/channel NLL: 0.5 * [ diff^2 / var + logvar ]
+        nll = 0.5 * (diff2 * inv_var + logvar)
+
+        return (nll * mask).sum() / (valid * C)
+
+    else:
+        raise ValueError(f"pred has {pred.shape[1]} channels; expected {C} or {2*C}.")
+
+
 def masked_mae(pred, target, mask, eps=1e-8):
-    diff = (pred - target).abs()
+    B, C, H, W = target.shape
+    diff = (pred[:,:C] - target).abs()
     wsum = mask.sum()
     if wsum < eps:
         return diff.new_zeros(())
-    return (diff * mask).sum() / (wsum * pred.shape[1]).clamp_min(1.0)
+    return (diff * mask).sum() / (wsum * C).clamp_min(1.0)
 
 subid_re = re.compile(r".*?_subid(?P<subid>\d+)_views10_aug8_C5_256x256\.npy$")
 def find_packs(data_dir: str) -> Dict[str, np.ndarray]:
@@ -69,7 +115,7 @@ def find_packs(data_dir: str) -> Dict[str, np.ndarray]:
         subid = m.group("subid")
         # Load fully into RAM as float32 ndarray
         arr = np.load(path)  # already float32 per your save; if not: .astype(np.float32, copy=False)
-        if arr.shape[1] != 5 or arr.shape[2:] != (H, W):
+        if arr.shape[1] != IN_CHANNELS+TARGET_C or arr.shape[2:] != (H, W):
             raise RuntimeError(f"Unexpected shape {arr.shape} in {path}")
         packs[subid] = arr
     if not packs:
@@ -101,8 +147,9 @@ class GalaxyPackDataset(Dataset):
     def __getitem__(self, idx):
         sid, i = self.items[idx]
         sample = self.packs[sid][i]       # (5,H,W) float32
-        x = sample[:3]                    # (3,H,W)
-        y = sample[3:]                    # (2,H,W)
+        
+        x = sample[:IN_CHANNELS]                       # (IN_CHANNELS,H,W)
+        y = sample[IN_CHANNELS:]  # (OUT_CHANNELS,H,W)
         if self.compression == 'sqrt':
             x = np.sqrt(x)
         elif self.compression == 'log10':
@@ -122,19 +169,22 @@ def compute_input_norm(packs: Dict[str, np.ndarray], subids: List[str],compressi
     """
     Compute per-channel mean/std over the 3 brightness channels using ONLY the train subids.
     """
-    s = np.zeros(3, dtype=np.float64)
-    q = np.zeros(3, dtype=np.float64)
+    #C = packs[subids[0]].shape[1]
+    inC = IN_CHANNELS
+    s = np.zeros(inC, dtype=np.float64)
+    q = np.zeros(inC, dtype=np.float64)
     n = 0
     for sid in subids:
         arr = packs[sid]          # (N,5,H,W)
-        x = arr[:, :3, :, :]      # (N,3,H,W)
+        x = arr[:, :inC, :, :]      # (N,3,H,W)
         if compression == 'sqrt':
             x = np.sqrt(x)
         elif compression == 'log10':
             x = np.log10(x+1e-25)
         n += x.shape[0]*H*W
-        s += x.reshape(-1,3,H,W).transpose(1,0,2,3).reshape(3,-1).sum(axis=1)
-        q += (x**2).reshape(-1,3,H,W).transpose(1,0,2,3).reshape(3,-1).sum(axis=1)
+        xc = x.transpose(1,0,2,3).reshape(inC, -1)  # (inC, N*H*W)
+        s += xc.sum(axis=1)
+        q += (xc**2).sum(axis=1)
     mean = s / n
     var  = (q / n) - mean**2
     std  = np.sqrt(var)#np.sqrt(np.clip(var, 1e-12, None))
@@ -151,14 +201,14 @@ def train_one_epoch(model, loader, opt, scaler=None):
 
         opt.zero_grad(set_to_none=True)
         if scaler is not None:
-            with torch.autocast(device_type="cuda", dtype=torch.float16):
+            with torch.autocast(device_type="cuda", dtype=torch.float16, enabled=("cuda" in DEVICE)):
                 pred = model(x)
-                loss = masked_mse(pred, y, m)
+                loss = masked_gaussian_nll(pred, y, m)
             scaler.scale(loss).backward()
             scaler.step(opt)
             scaler.update()
         else:
-            pred = model(x); loss = masked_mse(pred, y, m)
+            pred = model(x); loss = masked_gaussian_nll(pred, y, m)
             loss.backward(); opt.step()
 
         mae = masked_mae(pred.detach(), y, m).item()
@@ -175,7 +225,7 @@ def evaluate(model, loader):
         y = batch["y"].to(DEVICE, non_blocking=True)
         m = batch["mask"].to(DEVICE, non_blocking=True)
         pred = model(x)
-        loss = masked_mse(pred, y, m)
+        loss = masked_gaussian_nll(pred, y, m)
         mae  = masked_mae(pred, y, m).item()
         tot_loss += loss.item(); tot_mae += mae
     n = len(loader)
@@ -213,25 +263,26 @@ def main():
                               persistent_workers=(NUM_WORKERS>0))
 
     # 5) model/optim
-    model = smp.Unet(
+    '''model = smp.Unet(
         encoder_name="resnet34",       # good starting point; try "resnet50", "convnext_tiny", "efficientnet-b3", etc.
         encoder_weights="imagenet",    # <-- THIS loads pretrained encoder weights
         in_channels=3,                 # your three velocity-bin brightness maps
         classes=2,                     # 2 output channels (u, v)
         activation=None                # regression: keep raw logits
-    ).to(DEVICE)
+    ).to(DEVICE)'''
+    model = MODEL.to(DEVICE)
     opt   = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=1e-4)
     scaler= torch.amp.GradScaler(enabled=("cuda" in DEVICE))
 
     # 6) train
     #os.makedirs("checkpoints", exist_ok=True)
     best_val = float("inf")
-    best_path = os.path.join(CHECKPOINTS_DIR,"unet_cgm_best.pt")#"checkpoints/unet_cgm_best.pt"
-    for p in model.encoder.parameters(): p.requires_grad = False  # warmup 3–5 epochs
+    best_path = os.path.join(CHECKPOINTS_DIR,CHECKPOINTS_NAME+"_cgm_best.pt")#"checkpoints/unet_cgm_best.pt"
+    for p in model.net.encoder.parameters(): p.requires_grad = False  # warmup 3–5 epochs
     
     for epoch in range(1, EPOCHS+1):
         if epoch > FREEZE_ENCODER_EPOCHS:
-            for p in model.encoder.parameters(): p.requires_grad = True
+            for p in model.net.encoder.parameters(): p.requires_grad = True
                 
         tr_loss, tr_mae = train_one_epoch(model, train_loader, opt, scaler)
         va_loss, va_mae = evaluate(model, test_loader)
@@ -255,7 +306,7 @@ def main():
     
         # ----- save PERIODIC checkpoint every 10 epochs -----
         if epoch % 10 == 0:
-            periodic_path = os.path.join(CHECKPOINTS_DIR,f"unet_cgm_epoch{epoch:03d}.pt")
+            periodic_path = os.path.join(CHECKPOINTS_DIR,CHECKPOINTS_NAME+f"_cgm_epoch{epoch:03d}.pt")
             torch.save({
                 "model": model.state_dict(),
                 "mean": mean, "std": std,

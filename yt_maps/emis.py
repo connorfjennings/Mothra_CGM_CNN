@@ -3,7 +3,7 @@ from scipy.ndimage import map_coordinates
 import numpy as np
 import collections
 
-basePath = '/home/cj535/project/CGM_Mothra/yt_maps/' ## basePath to cloudy tables, set accordingly.
+basePath = '/home/cj535/project/Mothra_CGM_CNN/yt_maps/' ## basePath to cloudy tables, set accordingly.
 
 lineAbbreviations = {'Lyman-alpha' : 'H  1 1215.67A',
                           'Lyman-beta'  : 'H  1 1025.72A',
