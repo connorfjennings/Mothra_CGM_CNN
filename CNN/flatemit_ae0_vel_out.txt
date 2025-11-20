@@ -1,0 +1,13 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) StdEnv
+Traceback (most recent call last):
+  File "/gpfs/gibbs/project/vandokkum/cj535/Mothra_CGM_CNN/CNN/seg_models_train.py", line 322, in <module>
+    main()
+  File "/gpfs/gibbs/project/vandokkum/cj535/Mothra_CGM_CNN/CNN/seg_models_train.py", line 234, in main
+    packs = find_packs(DATA_DIR)  # dict: subid -> (N,5,256,256)
+  File "/gpfs/gibbs/project/vandokkum/cj535/Mothra_CGM_CNN/CNN/seg_models_train.py", line 117, in find_packs
+    raise RuntimeError(f"Unexpected shape {arr.shape} in {path}")
+RuntimeError: Unexpected shape (80, 5, 256, 256) in /home/cj535/palmer_scratch/TNG50_cutouts/MW_sample_maps/packed_aug8_flatemitvel/TNG50_snap099_subid342447_views10_aug8_C5_256x256.npy
+srun: error: r907u34n01: task 0: Exited with exit code 1

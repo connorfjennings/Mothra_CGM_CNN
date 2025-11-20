@@ -11,3 +11,6 @@ CNN/checkpoints_test/
 for_student/
 Pytorch-UNet/
 yt_quickstart/
+CNN/trained_weights/*.pt
+MW_sample/
+CNN/plots/

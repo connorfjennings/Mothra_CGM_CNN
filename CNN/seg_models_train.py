@@ -14,12 +14,13 @@ PATTERN    = "TNG50_snap099_subid*_views10_aug8_C5_256x256.npy"
 CHECKPOINTS_DIR = "/home/cj535/palmer_scratch/CNN_checkpoints/" + sys.argv[2]
 CHECKPOINTS_NAME = "UNetDropout"
 H, W = 256, 256
-IN_CHANNELS = 4
+IN_CHANNELS = 4            # 3 vel bins + bolometric
 TARGET_C = 2                # u,v
-OUT_CHANNELS = 2 * TARGET_C # 4, for aleotoric errors
+ALEOTORIC_ERRORS = 0
+OUT_CHANNELS = (ALEOTORIC_ERRORS+1) * TARGET_C
 R_MASK = 20                     # pixels
 BATCH_SIZE = 32
-EPOCHS = 200
+EPOCHS = 100
 FREEZE_ENCODER_EPOCHS = 10
 LR = 1e-3
 NUM_WORKERS = 4
@@ -59,7 +60,7 @@ def masked_mse(pred, target, mask, eps=1e-8):
         return diff2.new_zeros(())
     return (diff2 * mask).sum() / (wsum * pred.shape[1])  # average over valid pixels & channels
 
-def masked_gaussian_nll(pred, target, mask, eps=1e-8, clamp_logvar=(-10.0, 10.0)):
+def masked_gaussian_nll(pred, target, mask, eps=1e-8, sigma_min=5.0, sigma_max=300.0):
     """
     Heteroscedastic masked Gaussian NLL.
     pred:   (B, 2C, H, W) if predicting mean and logvar per channel (here C=2 for u,v).
@@ -81,16 +82,13 @@ def masked_gaussian_nll(pred, target, mask, eps=1e-8, clamp_logvar=(-10.0, 10.0)
         return (diff2 * mask).sum() / (valid * C)
 
     elif pred.shape[1] == 2 * C:
-        mu        = pred[:, :C]                         # (B,C,H,W)
-        logvar    = pred[:, C:]                         # (B,C,H,W)
-        # clamp log-variance for stability
-        logvar    = torch.clamp(logvar, *clamp_logvar)
-        inv_var   = torch.exp(-logvar)
-
-        diff2     = (mu - target) ** 2
-        # per-pixel/channel NLL: 0.5 * [ diff^2 / var + logvar ]
-        nll = 0.5 * (diff2 * inv_var + logvar)
-
+        mu, s = pred[:, :C], pred[:, C:]
+        # bounded variance
+        var = (sigma_min**2) + (sigma_max**2 - sigma_min**2) * torch.sigmoid(s)
+        logvar = torch.log(var)
+    
+        diff2 = (mu - target)**2
+        nll = 0.5 * (diff2 / var + logvar)
         return (nll * mask).sum() / (valid * C)
 
     else:
@@ -106,7 +104,7 @@ def masked_mae(pred, target, mask, eps=1e-8):
     return (diff * mask).sum() / (wsum * C).clamp_min(1.0)
 
 subid_re = re.compile(r".*?_subid(?P<subid>\d+)_views10_aug8_C5_256x256\.npy$")
-def find_packs(data_dir: str) -> Dict[str, np.ndarray]:
+def find_packs(data_dir: str,in_channels=IN_CHANNELS,target_c = TARGET_C) -> Dict[str, np.ndarray]:
     packs = {}
     for path in glob.glob(os.path.join(data_dir, PATTERN)):
         m = subid_re.match(path)
@@ -115,7 +113,7 @@ def find_packs(data_dir: str) -> Dict[str, np.ndarray]:
         subid = m.group("subid")
         # Load fully into RAM as float32 ndarray
         arr = np.load(path)  # already float32 per your save; if not: .astype(np.float32, copy=False)
-        if arr.shape[1] != IN_CHANNELS+TARGET_C or arr.shape[2:] != (H, W):
+        if arr.shape[1] != in_channels+target_c or arr.shape[2:] != (H, W):
             raise RuntimeError(f"Unexpected shape {arr.shape} in {path}")
         packs[subid] = arr
     if not packs:
@@ -129,7 +127,7 @@ class GalaxyPackDataset(Dataset):
     Expects memory-resident dict: subid -> ndarray (N,5,H,W).
     Normalization (mean/std) is applied to input channels only.
     """
-    def __init__(self, packs: Dict[str, np.ndarray], subids: List[str], mean=None, std=None, compression='log10',r_mask=R_MASK):
+    def __init__(self, packs: Dict[str, np.ndarray], subids: List[str], mean=None, std=None, compression='log10',r_mask=R_MASK,in_channels=IN_CHANNELS):
         self.subids = list(subids)
         self.packs = packs
         # Build an index: for each subid, iterate over samples
@@ -141,6 +139,7 @@ class GalaxyPackDataset(Dataset):
         self.mean = mean  # (3,)
         self.std  = std   # (3,)
         self.compression = compression
+        self.in_channels = IN_CHANNELS
 
     def __len__(self): return len(self.items)
 
@@ -148,8 +147,8 @@ class GalaxyPackDataset(Dataset):
         sid, i = self.items[idx]
         sample = self.packs[sid][i]       # (5,H,W) float32
         
-        x = sample[:IN_CHANNELS]                       # (IN_CHANNELS,H,W)
-        y = sample[IN_CHANNELS:]  # (OUT_CHANNELS,H,W)
+        x = sample[:self.in_channels]                       # (IN_CHANNELS,H,W)
+        y = sample[self.in_channels:]  # (OUT_CHANNELS,H,W)
         if self.compression == 'sqrt':
             x = np.sqrt(x)
         elif self.compression == 'log10':
@@ -165,12 +164,11 @@ class GalaxyPackDataset(Dataset):
             "subid": sid
         }
 
-def compute_input_norm(packs: Dict[str, np.ndarray], subids: List[str],compression='log10'):
+def compute_input_norm(packs: Dict[str, np.ndarray], subids: List[str],compression='log10',inC=IN_CHANNELS):
     """
     Compute per-channel mean/std over the 3 brightness channels using ONLY the train subids.
     """
     #C = packs[subids[0]].shape[1]
-    inC = IN_CHANNELS
     s = np.zeros(inC, dtype=np.float64)
     q = np.zeros(inC, dtype=np.float64)
     n = 0

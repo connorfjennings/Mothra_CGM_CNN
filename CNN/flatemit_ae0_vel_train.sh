@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=weightgas_vel_train
-#SBATCH --output=weightemit_vel_out.txt
+#SBATCH --job-name=flatgas_ae0_vel_train
+#SBATCH --output=flatemit_ae0_vel_out.txt
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --partition=gpu
@@ -18,5 +18,5 @@ conda activate torch
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 export MKL_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
-srun python seg_models_train.py packed_aug8_weightemitvel weightemit_vel
+srun python seg_models_train.py packed_aug8_flatemitvel flatemit_vel
 

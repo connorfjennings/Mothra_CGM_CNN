@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=weightgas_vel_train
-#SBATCH --output=weightemit_vel_out.txt
+#SBATCH --job-name=weightgas_ae0_vel_train
+#SBATCH --output=weightemit_ae0_vel_out.txt
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --partition=gpu
