@@ -38,6 +38,60 @@ class UNetDropout(nn.Module):
     def forward(self, x):
         return self.net(x)
 
+class UNetMultiHeadProfiles(nn.Module):
+    """
+    maps:        (B, Cmap, H, W)  e.g. per-pixel u,v (and optionally logvar)
+    mass_prof:   (B, K)
+    flow_prof:   (B, L)
+    """
+    def __init__(self, in_channels=5, out_channels=3,
+                 K=37, L=37, p=0.2,
+                 encoder_name="resnet34", encoder_weights="imagenet"):
+        super().__init__()
+        self.net = smp.Unet(
+            encoder_name=encoder_name,
+            encoder_weights=encoder_weights,
+            in_channels=in_channels,
+            classes=out_channels,
+            activation=None
+        )
+        
+        # optional MC dropout in decoder
+        for block in self.net.decoder.blocks:
+            block.conv2.add_module("mc_dropout_after_conv2", nn.Dropout2d(p))
+
+        enc_out_ch = self.net.encoder.out_channels[-1]
+        self.mass_head = nn.Linear(enc_out_ch, K)
+        self.flow_head = nn.Linear(enc_out_ch, L)
+
+        def head_vec(out_dim):
+            return nn.Sequential(
+                nn.AdaptiveAvgPool2d(1),
+                nn.Flatten(),
+                nn.Dropout(p),
+                nn.Linear(enc_out_ch, 256), nn.ReLU(inplace=True),
+                nn.Dropout(p),
+                nn.Linear(256, 256), nn.ReLU(inplace=True),
+                nn.Dropout(p),
+                nn.Linear(256, out_dim)    # raw (z-scored) outputs
+            )
+
+        self.mass_head = head_vec(K)
+        self.flow_head = head_vec(L)
+
+    def forward(self, x):
+        #maps = self.net(x)
+        feats = self.net.encoder(x)          # list of feature maps
+        deep  = feats[-1]                    # (B, C_enc, H_enc, W_enc)
+        #maps  = self.net.segmentation_head(dec)
+        deep  = feats[-1]
+        dec   = self.net.decoder(feats)
+        maps  = self.net.segmentation_head(dec)
+        Mvec  = self.mass_head(deep)   # (B,K)
+        Fvec  = self.flow_head(deep)   # (B,L)
+        return {"maps": maps, "mass_prof": Mvec, "flow_prof": Fvec}
+
+
 
 
 class DoubleConv(nn.Module):

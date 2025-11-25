@@ -50,12 +50,16 @@ center_prop  = (center_comov.to("kpc") * ds.scale_factor)
 resolution = (256,256)
 
 add_emission_fields(ds,line="Halpha")
+add_emission_fields(ds,line="N2")
+add_emission_fields(ds,line="O3")
 
 vel_bounds = [(-300, -100),(-100, 100),(100, 300)]
 for vb in vel_bounds:
     lo,hi = vb
     add_los_mask_fields(ds,lo, hi)
     add_los_mask_emission_fields(ds,lo,hi,line='Halpha')
+    add_los_mask_emission_fields(ds,lo,hi,line='N2')
+    add_los_mask_emission_fields(ds,lo,hi,line='O3')
 
 add_spherical_rv(ds)
 
@@ -78,22 +82,23 @@ add_velocity_projection_fields(ds,u_hat,v_hat,w_hat,cold=False,emission=False)
 add_emission_filter(ds,minL=5e-43,line='Halpha')
 add_coldgas_filter(ds,maxT=10**4.5)
 
-outdir = '/home/cj535/palmer_scratch/TNG50_cutouts/MW_sample_maps/Halpha5e-43velocity/'
+outdir = f'/home/cj535/palmer_scratch/TNG50_cutouts/MW_sample_maps/{particle_filter}_Halphaweightedvelocity/'
 
 for field in [(particle_filter,"velocity_u"),(particle_filter,"velocity_v"),(particle_filter,"velocity_w")]:
     p = yt.OffAxisProjectionPlot(
         ds, w_hat, field,
         center=center_prop, width=width_proper,
         north_vector=v_hat,
-        weight_field=(particle_filter,"density"),
+        weight_field=(particle_filter,"Halpha_brightness"),
         buff_size=resolution,
         data_source=sp
     )
     img = p.frb[field]
-    outfile = f'{basefilename}_view{angle_number:02d}_emitting_{field[1]}.npy'
+    outfile = f'{basefilename}_view{angle_number:02d}_{particle_filter}_{field[1]}.npy'
     outpath = outdir+outfile
     np.save(outpath,img.to_value(img.units).astype(np.float32))
 
+'''
 #radial summary
 if angle_number == 0:
     outdir = '/home/cj535/palmer_scratch/TNG50_cutouts/MW_sample_maps/1D_kinematics/'
@@ -111,31 +116,37 @@ if angle_number == 0:
     mass_array = np.array(mass_array)
     kinematics_1D = np.stack([mass_array,mass_flow_array],axis=-1)
     outfile = f'{basefilename}_emitting_1D_kinematics.npy'
+    outpath = outdir+outfile
     np.save(outpath,kinematics_1D.astype(np.float32))
 
 #save Halpha brightness maps
-outdir = '/home/cj535/palmer_scratch/TNG50_cutouts/MW_sample_maps/Halpha/'
 
-field_list = [("gas","Halpha_brightness"),
-              ("gas","Halpha_brightness_-300_-100"),
-              ("gas","Halpha_brightness_-100_100"),
-              ("gas","Halpha_brightness_100_300")]
-p = yt.OffAxisProjectionPlot(
-    ds, w_hat, field_list,
-    center=center_prop, width=width_proper,
-    north_vector=v_hat,
-    method="integrate",
-    buff_size=resolution,
-    data_source=sp
-)
+line_list = ['Halpha','N2','O3']
 
-for field in field_list:
-    img = p.frb[field]
-    outfile = f'{basefilename}_view{angle_number:02d}_{field[1]}.npy'
-    outpath = outdir+outfile
-    np.save(outpath,img.to_value(img.units).astype(np.float32))
+for line in line_list:
 
+    outdir = f'/home/cj535/palmer_scratch/TNG50_cutouts/MW_sample_maps/{line}/'
+    
+    field_list = [("gas",f"{line}_brightness"),
+                  ("gas",f"{line}_brightness_-300_-100"),
+                  ("gas",f"{line}_brightness_-100_100"),
+                  ("gas",f"{line}_brightness_100_300")]
+    p = yt.OffAxisProjectionPlot(
+        ds, w_hat, field_list,
+        center=center_prop, width=width_proper,
+        north_vector=v_hat,
+        method="integrate",
+        buff_size=resolution,
+        data_source=sp
+    )
+    
+    for field in field_list:
+        img = p.frb[field]
+        outfile = f'{basefilename}_view{angle_number:02d}_{field[1]}.npy'
+        outpath = outdir+outfile
+        np.save(outpath,img.to_value(img.units).astype(np.float32))
 
+'''
 
 
 

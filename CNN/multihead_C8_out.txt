@@ -1,0 +1,10 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) StdEnv
+Loaded 175 galaxies into RAM (with 1D profiles).
+Train galaxies: 140 | Test galaxies: 35
+Input mean: [-22.795837 -24.478437 -22.955156 -24.481567] std: [1.2827196 1.0031925 1.2085617 1.0090231]
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 48403390.0 ON r814u29n07 CANCELLED AT 2025-11-25T16:07:44 ***
+slurmstepd: error: *** JOB 48403390 ON r814u29n07 CANCELLED AT 2025-11-25T16:07:44 ***
